@@ -1,10 +1,7 @@
 # RobotFrameworkTraining
 
 
-## Lecture 1.1
-
-
-### Introduction
+## Lecture 1.1 - Introduction
 
 Robot framework is a open source test automation framework written in python. The beauty of this framework is that you need not learn any language like java ,C# or python because it has simple plain text syntax. And instead of writing complicated code, you need to use pre-written functions. It can be extended easily with huge amount of libraries in python or java.
 
@@ -40,6 +37,33 @@ Selenium automates browsers. That's it! What you do with that power is entirely 
 To learn more about selenium, refer [selenium official website](https://www.seleniumhq.org/)
 
 
+SeleniumLibrary is a web testing library for Robot Framework that utilizes the Selenium tool internally. 
+
 ---------------------------------------------------------------
 
-## Lecture 1.2
+
+## Lecture 1.2 - Edge of Robot framework over other automation tools/frameworks
+
+
+* RF is Free.
+
+* OS independent.
+
+* Require no (or very less) programming skill.
+
+* support web, device, api and database automation.
+
+* Excellent reporting.
+
+* support Continuous Integration
+
+* support parallel execution.
+
+* support remote execution.
+
+* excellent community support.
+
+* good option for RPA.
+
+
+
