@@ -10,16 +10,19 @@ Robot Framework is operating system and application independent. It supports bot
 
 ### Key features
 
-open-source
+* open-source
 
-python based automation framework
+* python based automation framework
 
-keyword driven
+* keyword driven
 
-extends support for web, device, api and database automation
+* extends support for web, device, api and database automation
 
-operating system independent
+* operating system independent
 
 
 ### Architecture
+
+![Robot framework architecture](/images/RF_architecture.png)
+Format: ![Alt Text](url)
 
