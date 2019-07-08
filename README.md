@@ -43,7 +43,11 @@ To learn more about selenium, refer [selenium official website](https://www.sele
 SeleniumLibrary is a web testing library for Robot Framework that utilizes the Selenium tool internally. 
 
 
+
 ---------------------------------------------------------------
+---------------------------------------------------------------
+
+
 
 
 
@@ -73,6 +77,9 @@ SeleniumLibrary is a web testing library for Robot Framework that utilizes the S
 
 
 ---------------------------------------------------------------
+---------------------------------------------------------------
+
+
 
 
 ### Lecture 1.3 - Installation
@@ -80,6 +87,10 @@ SeleniumLibrary is a web testing library for Robot Framework that utilizes the S
 
 
 ---------------------------------------------------------------
+---------------------------------------------------------------
+
+
+
 
 
 ### Lecture 1.4 - RIDE and RED IDE 
@@ -107,7 +118,14 @@ This is how RED looks like
 
 ![RED Editor](/images/RedEditor.png)
 
+
+
+
 ---------------------------------------------------------------
+---------------------------------------------------------------
+
+
+
 
 
 ### Lecture 1.5 - Writing few basic tests for robot framework
