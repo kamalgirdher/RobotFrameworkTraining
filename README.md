@@ -94,6 +94,11 @@ This is how RIDE looks like
 ![RIDE Editor](/images/RideEditor.png)
 
 
+another view of RIDE (table view)
+
+![RIDE Editor table view](/images/RideEditor2.png)
+
+
 RIDE has some bugs therefore I recommend to use RED. RED Editor is Eclipse based editor for RobotFramework test cases.
 
 Here is the link to [download RED](https://github.com/nokia/RED/releases).
