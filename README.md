@@ -45,8 +45,6 @@ SeleniumLibrary is a web testing library for Robot Framework that utilizes the S
 
 
 ---------------------------------------------------------------
----------------------------------------------------------------
-
 
 
 
@@ -76,7 +74,6 @@ SeleniumLibrary is a web testing library for Robot Framework that utilizes the S
 
 
 
----------------------------------------------------------------
 ---------------------------------------------------------------
 
 
@@ -124,7 +121,7 @@ Installation for robot framework is easy. You just need to follow below steps:
 
 4. Install RobotFramework and required Libraries using below commands in command prompt
 
-	```code
+	```
 		pip install robotframework
 		pip install robotframework-SeleniumLibrary
 		pip install robotframework-RideEditor
@@ -133,9 +130,10 @@ Installation for robot framework is easy. You just need to follow below steps:
 5. Open command prompt, type ride.py and hit Enter. If RIDE opens, then you're all set. If it gives error that WxPython is not installed, then copy the link from the error, download and install. After installing, open new command prompt window and check if RIDE opens.
 
 	![Ride installed](/images/RideInstalled.png)
----------------------------------------------------------------
----------------------------------------------------------------
 
+
+
+---------------------------------------------------------------
 
 
 
@@ -167,10 +165,7 @@ This is how RED looks like
 
 
 
-
 ---------------------------------------------------------------
----------------------------------------------------------------
-
 
 
 
