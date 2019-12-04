@@ -96,11 +96,11 @@ Installation for robot framework is easy. You just need to follow below steps:
 
   a. If PIP is installed aready, it will appear like this
 	
-	  ![Pip installed already](/images/pipInstalled.png)
+	![Pip installed already](/images/pipInstalled.png)
 
   b. If PIP is not installed, it will appear like this
 	
-     ![Pip not installed](/images/pipNotInstalled.png)
+	![Pip not installed](/images/pipNotInstalled.png)
 
     i. To install pip, go to https://pypi.org/project/setuptools/ and click on "Download files"
 		
