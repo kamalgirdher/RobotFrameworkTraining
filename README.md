@@ -99,19 +99,19 @@ Installation for robot framework is easy. You just need to follow below steps:
 	![Pip installed already](/images/pipInstalled.png)
 
   b. If PIP is not installed, it will appear like this
-	
 	![Pip not installed](/images/pipNotInstalled.png)
 
-    i. To install pip, go to https://pypi.org/project/setuptools/ and click on "Download files"
+
+	i. To install pip, go to https://pypi.org/project/setuptools/ and click on "Download files"
 		
-    ii. Also, download pip from https://pypi.org/project/pip/ in same way.
+	ii. Also, download pip from https://pypi.org/project/pip/ in same way.
  		
-    iii. Unzip setuptools, open command prompt and change directory to extracted folder
-				Example: cd "C:/Downloads/setuptools"
+	iii. Unzip setuptools, open command prompt and change directory to extracted folder
+         Example: cd "C:/Downloads/setuptools"
 		
-    iv. Then install setuptools using command:
+	iv. Then install setuptools using command:
 		
-    ```code
+    ```
         python setup.py install
     ```
 		
@@ -128,7 +128,6 @@ Installation for robot framework is easy. You just need to follow below steps:
 	```
 	
 5. Open command prompt, type ride.py and hit Enter. If RIDE opens, then you're all set. If it gives error that WxPython is not installed, then copy the link from the error, download and install. After installing, open new command prompt window and check if RIDE opens.
-
 	![Ride installed](/images/RideInstalled.png)
 
 
