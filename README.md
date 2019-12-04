@@ -94,30 +94,30 @@ Installation for robot framework is easy. You just need to follow below steps:
 
 3. Open Cmd and Type "pip" to check if PIP is already installed.
 
-	a. If PIP is installed aready, it will appear like this
+  a. If PIP is installed aready, it will appear like this
 	
-	![Pip installed already](/images/pipInstalled.png)
-	
-	b. If PIP is not installed, it will appear like this
-	
-	![Pip not installed](/images/pipNotInstalled.png)
+	  ![Pip installed already](/images/pipInstalled.png)
 
-		i. To install pip, go to https://pypi.org/project/setuptools/ and click on "Download files"
+  b. If PIP is not installed, it will appear like this
+	
+     ![Pip not installed](/images/pipNotInstalled.png)
+
+    i. To install pip, go to https://pypi.org/project/setuptools/ and click on "Download files"
 		
-		ii. Also, download pip from https://pypi.org/project/pip/ in same way.
-		
-		iii. Unzip setuptools, open command prompt and change directory to extracted folder
+    ii. Also, download pip from https://pypi.org/project/pip/ in same way.
+ 		
+    iii. Unzip setuptools, open command prompt and change directory to extracted folder
 				Example: cd "C:/Downloads/setuptools"
 		
-		iv. Then install setuptools using command:
+    iv. Then install setuptools using command:
 		
-			```code
-				python setup.py install
-			```
+    ```code
+        python setup.py install
+    ```
 		
-		v. Install pip in exactly same way.
+    v. Install pip in exactly same way.
 		
-		vi. Again try step 3.a and Pip should be available now.
+    vi. Again try step 3.a and Pip should be available now.
 
 4. Install RobotFramework and required Libraries using below commands in command prompt
 
