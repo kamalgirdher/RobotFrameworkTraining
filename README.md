@@ -84,8 +84,55 @@ SeleniumLibrary is a web testing library for Robot Framework that utilizes the S
 
 ### Lecture 1.3 - Installation
 
+Installation for robot framework is easy. You just need to follow below steps:
 
+1. Download and Install Python  https://www.python.org/downloads/
 
+2. Update envirnment variables. You need to update the PATH variable with 
+		a. C:\Python3\
+		b. C:\Python3\Scripts
+		c. C:\Python3\Lib\site-packages\
+		
+![Environment variables](/images/environmentVariables.png)
+
+3. Open Cmd and Type "pip" to check if PIP is already installed.
+
+	a. If PIP is installed aready, it will appear like this
+	
+	![Pip installed already](/images/pipInstalled.png)
+	
+	b. If PIP is not installed, it will appear like this
+	
+	![Pip not installed](/images/pipNotInstalled.png)
+
+		i. To install pip, go to https://pypi.org/project/setuptools/ and click on "Download files"
+		
+		ii. Also, download pip from https://pypi.org/project/pip/ in same way.
+		
+		iii. Unzip setuptools, open command prompt and change directory to extracted folder
+				Example: cd "C:/Downloads/setuptools"
+		
+		iv. Then install setuptools using command:
+		
+			```code
+				python setup.py install
+			```
+		
+		v. Install pip in exactly same way.
+		
+		vi. Again try step 3.a and Pip should be available now.
+
+4. Install RobotFramework and required Libraries using below commands in command prompt
+
+	```code
+		pip install robotframework
+		pip install robotframework-SeleniumLibrary
+		pip install robotframework-RideEditor
+	```
+	
+5. Open command prompt, type ride.py and hit Enter. If RIDE opens, then you're all set. If it gives error that WxPython is not installed, then copy the link from the error, download and install. After installing, open new command prompt window and check if RIDE opens.
+
+	![Ride installed](/images/RideInstalled.png)
 ---------------------------------------------------------------
 ---------------------------------------------------------------
 
