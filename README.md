@@ -168,7 +168,24 @@ This is how RED looks like
 
 ---------------------------------------------------------------
 
+### Lecture 1.5 - Create a new project in RED
+
+1. Click on New > Robot Project
+
+![New robot project](/images/REDNewProject.png)
+
+2. Enter project name and location
+
+![Project name](/images/REDNewProject2.png)
+
+3. Right click on project on the left panel and add a test suite.
+
+![Add test suite](/images/RED_addNewTestSuite.png)
+
+4. Now, you can add test cases in Editor.
 
 
+
+---------------------------------------------------------------
 
 ### Lecture 1.5 - Writing few basic tests for robot framework
