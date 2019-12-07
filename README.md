@@ -182,13 +182,75 @@ This is how RED looks like
 
 ![Add test suite](/images/RED_addNewTestSuite.png)
 
-4. Now, you can add test cases in Editor.
+4. Now, you can add test cases in Editor. I'll explain more about test cases in the next section.
+
+
+
 
 
 
 ---------------------------------------------------------------
 
-### Lecture 1.6 - Writing few basic tests for robot framework
+
+
+
+
+## Section 2
+
+
+### Lecture 2.1 - Test Suite, Test Cases, User Keywords and Reports
+
+**Test Suite** - As explained in L-1.5, we can create a **Test Suite** under a project. A *test suite*, in general, is a collection of test cases.
+
+A test suite can be saved as .robot file, .txt file or .tsv file. You can follow any one and use it across in your project.
+
+![Create Test Suite in Eclipse RED](/images/CreateTestSuite.png)
+
+In RIDE, it appears like this
+
+![Create Test Suite in Ride](/images/CreateTestSuiteInRide.png)
+
+
+**Test Suite Configuration**
+
+1. Imports
+	a. Libraries
+	b. Resources
+	c. Variables
+	
+2. Add new
+	a. Scalar
+	b. List
+	c. Dictionary
+	d. Metadata
+	
+3. Settings
+	a. Documentation
+	b. Suite Setup
+	c. Suite Teardown
+	d. Test Setup
+	e. Test Teardown
+	f. Test Template
+	g. Test Timeout
+	h. Force Tags
+	i. Default Tags
+
+Configuring these on RIDE is very easy because its interface is very user friendly.
+
+![Configuring imports and settings in RIDE](/images/Ride_TestSuiteSettingsAndImports.png)
+
+
+In RED, you need to go to editor and click Ctrl + Space. When you double click on Settings, all these would pop up.
+
+![Configuring imports and settings in RIDE](/images/RED_TestSuiteSettingsAndImports.png)
+
+We will see more details about these later.
+
+
+
+**Test Cases** - 
+
+It is absolutely okay, if you do not understand the below code and it's output. Just have a glimpse of how we write test cases in robot framework.
 
 ```
 *** Test Cases ***
@@ -230,16 +292,25 @@ Ending test: Project1.TS1.TestCase2 - Celcius to Farenheit in Bulk
 
 
 
+**User Keywords** -
 
+User keywords are nothing but Functions if we compare with programming languages. We use functions to make code modular. In the same way, User keywords in robot framework are meant to serve this purpose.
 
+```
+*** Test Cases ***
+TC1
+    Function1
+    Run Keyword    Function2    
+
+*** Keywords ***
+Function1
+    Log    This is a inner function1
+    
+Function2
+    Log    This is a inner function2
+```
 ---------------------------------------------------------------
 
 
+### Lecture 2.2 - Builtin-Library and keywords
 
-
-
-
-## Section 2
-
-
-### Lecture 2.1 - Test cases, Test Suite, User Keywords and Reports

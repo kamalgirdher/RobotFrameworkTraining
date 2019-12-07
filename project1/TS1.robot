@@ -1,14 +1,11 @@
 *** Test Cases ***
+TC1
+    Function1
+    Run Keyword    Function2    
 
-TestCase1 - Celcius to Farenheit
-    ${celcius}=    Set Variable    37
-    ${Farehneit}=    Evaluate    (${celcius}*9/5)+32
-    Log    ${Farehneit}
+*** Keywords ***
+Function1
+    Log    This is a inner function1
     
-TestCase2 - Celcius to Farenheit in Bulk
-    @{celcius}=    Create List    10    12    37    22
-    FOR    ${temp}    IN    @{celcius}
-        ${Farehneit}=    Evaluate    (${temp}*9/5)+32
-        Log    ${Farehneit}
-    END
-    
+Function2
+    Log    This is a inner function2
