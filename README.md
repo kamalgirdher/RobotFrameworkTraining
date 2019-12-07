@@ -190,7 +190,6 @@ This is how RED looks like
 
 ### Lecture 1.6 - Writing few basic tests for robot framework
 
-
 ```
 *** Test Cases ***
 
@@ -228,4 +227,19 @@ Starting test: Project1.TS1.TestCase2 - Celcius to Farenheit in Bulk
 Ending test: Project1.TS1.TestCase2 - Celcius to Farenheit in Bulk
 ```
 
-	
+
+
+
+
+
+---------------------------------------------------------------
+
+
+
+
+
+
+## Section 2
+
+
+### Lecture 2.1 - Test cases, Test Suite, User Keywords and Reports
