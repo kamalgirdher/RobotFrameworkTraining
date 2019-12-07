@@ -188,4 +188,44 @@ This is how RED looks like
 
 ---------------------------------------------------------------
 
-### Lecture 1.5 - Writing few basic tests for robot framework
+### Lecture 1.6 - Writing few basic tests for robot framework
+
+
+```
+*** Test Cases ***
+
+TestCase1 - Celcius to Farenheit
+    ${celcius}=    Set Variable    37
+    ${Farehneit}=    Evaluate    (${celcius}*9/5)+32
+    Log    ${Farehneit}
+    
+TestCase2 - Celcius to Farenheit in Bulk
+    @{celcius}=    Create List    10    12    37    22
+    FOR    ${temp}    IN    @{celcius}
+        ${Farehneit}=    Evaluate    (${temp}*9/5)+32
+        Log    ${Farehneit}\][l
+    END
+```
+
+### Output logs
+```
+Starting test: Project1.TS1.TestCase1 - Celcius to Farenheit
+20191207 22:41:50.743 : INFO : ${celcius} = 37
+20191207 22:41:50.743 : INFO : ${Farehneit} = 98.6
+20191207 22:41:50.743 : INFO : 98.6
+Ending test: Project1.TS1.TestCase1 - Celcius to Farenheit
+
+Starting test: Project1.TS1.TestCase2 - Celcius to Farenheit in Bulk
+20191207 22:41:50.743 : INFO : @{celcius} = [ 10 | 12 | 37 | 22 ]
+20191207 22:41:50.743 : INFO : ${Farehneit} = 50.0
+20191207 22:41:50.743 : INFO : 50.0
+20191207 22:41:50.743 : INFO : ${Farehneit} = 53.6
+20191207 22:41:50.743 : INFO : 53.6
+20191207 22:41:50.743 : INFO : ${Farehneit} = 98.6
+20191207 22:41:50.743 : INFO : 98.6
+20191207 22:41:50.743 : INFO : ${Farehneit} = 71.6
+20191207 22:41:50.743 : INFO : 71.6
+Ending test: Project1.TS1.TestCase2 - Celcius to Farenheit in Bulk
+```
+
+	
