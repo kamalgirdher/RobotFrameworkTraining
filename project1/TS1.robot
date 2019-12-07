@@ -9,7 +9,6 @@ TestCase2 - Celcius to Farenheit in Bulk
     @{celcius}=    Create List    10    12    37    22
     FOR    ${temp}    IN    @{celcius}
         ${Farehneit}=    Evaluate    (${temp}*9/5)+32
-        Log    ${Farehneit}\][l
+        Log    ${Farehneit}
     END
-
-TestCase3    
+    
