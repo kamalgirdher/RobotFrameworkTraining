@@ -314,3 +314,37 @@ Function2
 
 ### Lecture 2.2 - Builtin-Library and keywords
 
+**Local and Global Variables**
+
+**1. Set Variable**
+	```
+	*** Test Cases ***
+	TC1
+		${a}=    Set Variable    50
+	```
+
+**2. Set Variable If**
+	```
+	*** Test Cases ***
+	TC1
+		${a}=    Set Variable If    True==True    50    100
+		Log    ${a}
+	TC2
+		${a}=    Set Variable If    True==False    50    100
+		Log    ${a}
+	```
+
+**Output:**
+```
+20191208 23:18:11.433 : INFO : ${a} = 50
+20191208 23:18:11.434 : INFO : 50
+Ending test: Project1.TS1.TC1
+
+Starting test: Project1.TS1.TC2
+20191208 23:18:11.436 : INFO : ${a} = 100
+20191208 23:18:11.438 : INFO : 100
+Ending test: Project1.TS1.TC2
+```
+
+
+**3. Set Global Variable**
