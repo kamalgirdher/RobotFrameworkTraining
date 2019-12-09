@@ -7,11 +7,11 @@
 
 A test suite can be saved as .robot file, .txt file or .tsv file. You can follow any one and use it across in your project.
 
-![Create Test Suite in Eclipse RED](/images/CreateTestSuite.png)
+![Create Test Suite in Eclipse RED](../images/CreateTestSuite.png)
 
 In RIDE, it appears like this
 
-![Create Test Suite in Ride](/images/CreateTestSuiteInRide.png)
+![Create Test Suite in Ride](../images/CreateTestSuiteInRide.png)
 
 
 **Test Suite Configuration**
@@ -40,12 +40,12 @@ In RIDE, it appears like this
 
 Configuring these on RIDE is very easy because its interface is very user friendly.
 
-![Configuring imports and settings in RIDE](/images/Ride_TestSuiteSettingsAndImports.png)
+![Configuring imports and settings in RIDE](../images/Ride_TestSuiteSettingsAndImports.png)
 
 
 In RED, you need to go to editor and click Ctrl + Space. When you double click on Settings, all these would pop up.
 
-![Configuring imports and settings in RIDE](/images/RED_TestSuiteSettingsAndImports.png)
+![Configuring imports and settings in RIDE](../images/RED_TestSuiteSettingsAndImports.png)
 
 We will see more details about these later.
 

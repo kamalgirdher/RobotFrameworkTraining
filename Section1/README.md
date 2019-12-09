@@ -28,7 +28,7 @@ Robot Framework is operating system and application independent. It supports bot
 
 #### Architecture
 
-![Robot framework architecture](../imagesRF_architecture.png)
+![Robot framework architecture](../images/RF_architecture.png)
 
 
 
@@ -90,17 +90,17 @@ Installation for robot framework is easy. You just need to follow below steps:
 		b. C:\Python3\Scripts
 		c. C:\Python3\Lib\site-packages\
 		
-![Environment variables](../imagesenvironmentVariables.png)
+![Environment variables](../images/environmentVariables.png)
 
 3. Open Cmd and Type "pip" to check if PIP is already installed.
 
   a. If PIP is installed aready, it will appear like this
 	
-![Pip installed already](../imagespipInstalled.png)
+![Pip installed already](../images/pipInstalled.png)
 
   b. If PIP is not installed, it will appear like this
   
-![Pip not installed](../imagespipNotInstalled.png)
+![Pip not installed](../images/pipNotInstalled.png)
 
 
   i. To install pip, go to https://pypi.org/project/setuptools/ and click on "Download files"
@@ -130,7 +130,7 @@ Installation for robot framework is easy. You just need to follow below steps:
 	```
 	
 5. Open command prompt, type ride.py and hit Enter. If RIDE opens, then you're all set. If it gives error that WxPython is not installed, then copy the link from the error, download and install. After installing, open new command prompt window and check if RIDE opens.
-	![Ride installed](../imagesRideInstalled.png)
+	![Ride installed](../images/RideInstalled.png)
 
 
 
@@ -148,12 +148,12 @@ To install ride, which is default editor for robotframework:
 
 This is how RIDE looks like
 
-![RIDE Editor](../imagesRideEditor.png)
+![RIDE Editor](../images/RideEditor.png)
 
 
 another view of RIDE (table view)
 
-![RIDE Editor table view](../imagesRideEditor2.png)
+![RIDE Editor table view](../images/RideEditor2.png)
 
 
 RIDE has some bugs therefore I recommend to use RED. RED Editor is Eclipse based editor for RobotFramework test cases.
@@ -162,7 +162,7 @@ Here is the link to [download RED](https://github.com/nokia/RED/releases).
 
 This is how RED looks like
 
-![RED Editor](../imagesRedEditor.png)
+![RED Editor](../images/RedEditor.png)
 
 
 
@@ -172,14 +172,14 @@ This is how RED looks like
 
 1. Click on New > Robot Project
 
-![New robot project](../imagesREDNewProject.png)
+![New robot project](../images/REDNewProject.png)
 
 2. Enter project name and location
 
-![Project name](../imagesREDNewProject2.png)
+![Project name](../images/REDNewProject2.png)
 
 3. Right click on project on the left panel and add a test suite.
 
-![Add test suite](../imagesRED_addNewTestSuite.png)
+![Add test suite](../images/RED_addNewTestSuite.png)
 
 4. Now, you can add test cases in Editor. I'll explain more about test cases in the next section.
