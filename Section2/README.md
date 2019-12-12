@@ -223,8 +223,9 @@ TC8 - Convert To Hex
 
 **8. Convert To Integer**
 ```
-TC8 - Convert To Integer
+TC9 - Convert To Integer
     ${b}=    Convert To Integer    FF    16
+	${b}=    Convert To Integer   100    8
 ```
 
 **Output:**
@@ -233,7 +234,25 @@ TC8 - Convert To Integer
 ```
 
 **9. Convert To Number**
+```
+TC10 - Convert To Number
+    ${b}=    Convert To Number    41.111    1
+```
+
+**Output:**
+```
+20191212 13:09:03.088 : INFO : ${b} = 41.1
+```
 
 **10. Convert To Octal**
+```
+TC11 - Convert To Octal
+    ${b}=    Convert To Octal    111    2
+```
+
+**Output:**
+```
+20191212 13:10:54.408 : INFO : ${b} = 7
+```
 
 **11. Convert To String**
