@@ -360,3 +360,178 @@ Regexp Escape
 Remove Tags
 Set Variable
 ```
+
+---------------------------------------------------------------
+
+
+### Lecture 2.3 - Scalars, Lists, Dictionaries and Variable files
+
+**Scalars**
+
+Adding scalar in RIDE table view looks like this.
+
+![Scalar in RIDE](../images/scalar1.png)
+
+And you can add scalar in RED in this way.
+
+![Scalar in RED](../images/scalar2_RED.png)
+
+```
+*** Variables ***
+${scalar1}        10
+${scalar2}        Hello World
+
+*** Test Cases ***
+TC1 - Use Scalars
+    ${sum}=    Evaluate    ${scalar1}+100
+```
+
+**Output**
+```
+20191212 19:15:04.678 : INFO : ${sum} = 110
+```
+
+
+**Lists**
+
+![Lists in RIDE](../images/listvariable.png)
+
+```
+*** Variables ***
+@{list1}          Sun    Mon    Tue    Wed    Thu    Fri    Sat
+
+*** Test Cases ***
+TC1
+    Log    ${list1[3]}
+```
+
+**Output**
+```
+20191212 22:31:35.738 : INFO : Wed
+```
+
+
+**Dictionaries**
+```
+*** Variables ***
+&{dict1}          jan=1    feb=2    mar=3    apr=4    may=5    jun=6
+
+*** Test Cases ***
+TC1
+    Log    ${dict1['mar']}
+```
+
+**Output**
+```
+20191212 22:42:08.167 : INFO : 3
+```
+
+
+To create scalars, lists and dictionaries, we can also use keywords:
+```
+Set Variable
+Set Variable If
+Set Global Variable
+Set Test Variable
+Create List
+Create Dictionary
+```
+
+```
+*** Test Cases ***
+TC1
+    @{list2}=    Create List    1    2    3    4
+    Log    ${list2[2]}    
+
+
+TC2
+    &{dict2}=    Create Dictionary    a=1    b=2    c=3    d=4
+    Log    ${dict2['c']}    
+```
+
+
+**Variable Files**
+```
+*** Settings ***
+Variables         config.py
+
+TC3
+    Log    ${firstname}${space}${lastname}
+```
+
+where config file (config.py) has
+
+```
+firstname="Kamal"
+lastname="Girdher"
+profile="trainer"
+```
+
+**Output**
+```
+20191212 22:54:05.123 : INFO : Kamal Girdher
+```
+
+---------------------------------------------------------------
+
+
+### Lecture 2.4 - Suite/Test setup teardown
+
+```
+*** Settings ***
+Suite Setup       suite_setup
+Suite Teardown    suite_teardown
+Test Setup        test_setup
+Test Teardown     test_teardown
+
+*** Test Cases ***
+TC1
+    Log    1
+
+TC2
+    Log    2
+
+TC3
+    Log    3
+
+*** Keywords ***
+suite_setup
+    Log    SETUP SUITE
+
+suite_teardown
+    LOG    SUITE ENDS
+
+test_setup
+    LOG    TEST START
+
+test_teardown
+    Log    TEST ENDS
+
+```
+
+
+**Output**
+
+```
+20191212 23:04:51.049 : INFO : SETUP SUITE
+
+Starting test: Project2.1.SetupAndTeardown.TC1
+20191212 23:04:51.052 : INFO : TEST START
+20191212 23:04:51.055 : INFO : 1
+20191212 23:04:51.056 : INFO : TEST ENDS
+Ending test: Project2.1.SetupAndTeardown.TC1
+
+Starting test: Project2.1.SetupAndTeardown.TC2
+20191212 23:04:51.059 : INFO : TEST START
+20191212 23:04:51.060 : INFO : 2
+20191212 23:04:51.061 : INFO : TEST ENDS
+Ending test: Project2.1.SetupAndTeardown.TC2
+
+Starting test: Project2.1.SetupAndTeardown.TC3
+20191212 23:04:51.063 : INFO : TEST START
+20191212 23:04:51.064 : INFO : 3
+20191212 23:04:51.066 : INFO : TEST ENDS
+Ending test: Project2.1.SetupAndTeardown.TC3
+
+20191212 23:04:51.067 : INFO : SUITE ENDS
+```
