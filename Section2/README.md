@@ -209,8 +209,8 @@ TC7 - Convert To Bytes
 **7. Convert To Hex**
 ```
 TC8 - Convert To Hex
-    ${b}=    Convert To Hex    100    10
-    ${b}=    Convert To Hex    100    8
+	${b}=    Convert To Hex    100    10
+	${b}=    Convert To Hex    100    8
 ```    
 
 
@@ -276,79 +276,87 @@ By default only Info logs are printed on console. To print debug Logs, we need t
 There are lot of other functions in the built-in library. We will see their usage later while writing actual tests.
 
 **13.Suite/Test information functions**
-	Set Suite Documentation
-	Set Suite Metadata
-	Set Suite Variable
-	Set Tags
-	Set Test Documentation
-	Set Test Message
+```
+Set Suite Documentation
+Set Suite Metadata
+Set Suite Variable
+Set Tags
+Set Test Documentation
+Set Test Message
+```
 
 **14. Logs & Comments functions**
-	Comment
-	Log
-	Log Many
-	Log To Console
-	Log Variables
-
-
+```
+Comment
+Log
+Log Many
+Log To Console
+Log Variables
+```
 
 **15. Assertion functions**
-	Length Should Be
-	Should Be Empty
-	Should Be Equal
-	Should Be Equal As Integers
-	Should Be Equal As Numbers
-	Should Be Equal As Strings
-	Should Be True
-	Should Contain
-	Should Contain Any
-	Should Contain X Times
-	Should End With
-	Should Match
-	Should Match Regexp
-	Should Not Be Empty
-	Should Not Be Equal
-	Should Not Be Equal As Integers
-	Should Not Be Equal As Numbers
-	Should Not Be Equal As Strings
-	Should Not Be True
-	Should Not Contain
-	Should Not Contain Any
-	Should Not End With
-	Should Not Match
-	Should Not Match Regexp
-	Should Not Start With
-	Should Start With
-	Variable Should Exist
-	Variable Should Not Exist
+```
+Length Should Be
+Should Be Empty
+Should Be Equal
+Should Be Equal As Integers
+Should Be Equal As Numbers
+Should Be Equal As Strings
+Should Be True
+Should Contain
+Should Contain Any
+Should Contain X Times
+Should End With
+Should Match
+Should Match Regexp
+Should Not Be Empty
+Should Not Be Equal
+Should Not Be Equal As Integers
+Should Not Be Equal As Numbers
+Should Not Be Equal As Strings
+Should Not Be True
+Should Not Contain
+Should Not Contain Any
+Should Not End With
+Should Not Match
+Should Not Match Regexp
+Should Not Start With
+Should Start With
+Variable Should Exist
+Variable Should Not Exist
+```
 
 
 **16. Loop functions**
-	Continue For Loop
-	Continue For Loop If
-	Exit For Loop
-	Exit For Loop If
-
+```
+Continue For Loop
+Continue For Loop If
+Exit For Loop
+Exit For Loop If
+```
 
 **17. Import functions**
-	Import Library
-	Import Resource
-	Import Variables
-
+```
+Import Library
+Import Resource
+Import Variables
+```
 
 **18. Other Important functions**
-	Get Count
-	Get Length
-	Get Time
-	Get Variable Value
-	Get Variables
-	Catenate
-	Evaluate
-	Fail
-	No Operation
-	Pass Execution
-	Pass Execution If
-	Fatal Error
-	Regexp Escape
-	Remove Tags
-	Set Variable
+```
+Get Count
+Get Length
+Get Time
+Get Variable Value
+Get Variables
+Catenate
+Evaluate
+Fail
+No Operation
+Pass Execution
+Pass Execution If
+Fatal Error
+Regexp Escape
+Remove Tags
+Set Variable
+```
