@@ -129,10 +129,10 @@ Function2
 **2. Set Variable If**
 	```
 	*** Test Cases ***
-	TC1
+	TC2
 		${a}=    Set Variable If    True==True    50    100
 		Log    ${a}
-	TC2
+	TC3
 		${a}=    Set Variable If    True==False    50    100
 		Log    ${a}
 	```
@@ -141,13 +141,99 @@ Function2
 ```
 20191208 23:18:11.433 : INFO : ${a} = 50
 20191208 23:18:11.434 : INFO : 50
-Ending test: Project1.TS1.TC1
+Ending test: Project1.TS1.TC2
 
-Starting test: Project1.TS1.TC2
+Starting test: Project1.TS1.TC3
 20191208 23:18:11.436 : INFO : ${a} = 100
 20191208 23:18:11.438 : INFO : 100
-Ending test: Project1.TS1.TC2
 ```
 
 
 **3. Set Global Variable**
+	```
+	TC4 - Set Global Variable
+		${a}=    Set Variable    50
+		Set Global Variable    ${a}
+	```
+Now variable a is global and can be used from anywhere throughout the execution.
+
+
+
+
+**Data type/Number system Conversion**
+	
+**4. Convert To Binary**
+	```
+	TC5 - Convert To Binary
+		${a}=    Set Variable    99
+		${b}=    Convert To Binary    ${a}
+		Log    ${b}
+	```
+
+**Output:**
+```
+Starting test: Section2.BuiltInFunctions.TC5 - Convert To Binary
+20191212 11:48:08.040 : INFO : ${a} = 99
+20191212 11:48:08.041 : INFO : ${b} = 1100011
+20191212 11:48:08.042 : INFO : 1100011
+```
+
+**5. Convert To Boolean**
+This function is use to handle case-sensitive true and false and conver to a boolean value.
+```
+TC6 - Convert To Boolean
+    ${a}=    Set Variable    tRuE
+    ${b}=    Convert To Boolean    ${a}
+    Log    ${b}
+```
+
+```
+Starting test: Section2.BuiltInFunctions.TC6 - Convert To Boolean
+20191212 11:54:59.294 : INFO : ${a} = tRuE
+20191212 11:54:59.294 : INFO : ${b} = True
+20191212 11:54:59.295 : INFO : True
+```
+
+**6. Convert To Bytes**
+```
+TC7 - Convert To Bytes
+    ${b}=    Convert To Bytes    75 65 77 65 76     int
+    Log    ${b}
+```
+
+**Output:**
+```
+20191212 12:10:24.323 : INFO : ${b} = KAMAL
+20191212 12:10:24.324 : INFO : KAMAL
+```
+
+**7. Convert To Hex**
+```
+TC8 - Convert To Hex
+    ${b}=    Convert To Hex    100    10
+    ${b}=    Convert To Hex    100    8
+```    
+
+
+**Output:**
+```
+20191212 12:14:56.941 : INFO : ${b} = 64
+20191212 12:14:56.941 : INFO : ${b} = 40
+```
+
+**8. Convert To Integer**
+```
+TC8 - Convert To Integer
+    ${b}=    Convert To Integer    FF    16
+```
+
+**Output:**
+```
+20191212 12:16:10.501 : INFO : ${b} = 255
+```
+
+**9. Convert To Number**
+
+**10. Convert To Octal**
+
+**11. Convert To String**
