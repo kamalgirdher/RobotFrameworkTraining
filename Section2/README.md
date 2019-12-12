@@ -120,22 +120,20 @@ Function2
 **Local and Global Variables**
 
 **1. Set Variable**
-	```
-	*** Test Cases ***
-	TC1
-		${a}=    Set Variable    50
-	```
+```
+TC1
+	${a}=    Set Variable    50
+```
 
 **2. Set Variable If**
-	```
-	*** Test Cases ***
-	TC2
-		${a}=    Set Variable If    True==True    50    100
-		Log    ${a}
-	TC3
-		${a}=    Set Variable If    True==False    50    100
-		Log    ${a}
-	```
+```
+TC2
+	${a}=    Set Variable If    True==True    50    100
+	Log    ${a}
+TC3
+	${a}=    Set Variable If    True==False    50    100
+	Log    ${a}
+```
 
 **Output:**
 ```
@@ -150,11 +148,11 @@ Starting test: Project1.TS1.TC3
 
 
 **3. Set Global Variable**
-	```
-	TC4 - Set Global Variable
-		${a}=    Set Variable    50
-		Set Global Variable    ${a}
-	```
+```
+TC4 - Set Global Variable
+	${a}=    Set Variable    50
+	Set Global Variable    ${a}
+```
 Now variable a is global and can be used from anywhere throughout the execution.
 
 
@@ -163,12 +161,12 @@ Now variable a is global and can be used from anywhere throughout the execution.
 **Data type/Number system Conversion**
 	
 **4. Convert To Binary**
-	```
-	TC5 - Convert To Binary
-		${a}=    Set Variable    99
-		${b}=    Convert To Binary    ${a}
-		Log    ${b}
-	```
+```
+TC5 - Convert To Binary
+	${a}=    Set Variable    99
+	${b}=    Convert To Binary    ${a}
+	Log    ${b}
+```
 
 **Output:**
 ```
@@ -179,6 +177,7 @@ Starting test: Section2.BuiltInFunctions.TC5 - Convert To Binary
 ```
 
 **5. Convert To Boolean**
+
 This function is use to handle case-sensitive true and false and conver to a boolean value.
 ```
 TC6 - Convert To Boolean
@@ -255,4 +254,101 @@ TC11 - Convert To Octal
 20191212 13:10:54.408 : INFO : ${b} = 7
 ```
 
-**11. Convert To String**
+
+**11. Set Log Level**
+```
+TC13 - Info Logs
+    Set Log Level    INFO
+    Log    this is Info Log    INFO
+    Log    <h1>this is HTML Log</h1>    HTML
+    Log    this is WARN Log    WARN
+    Log    this is ERROR Log    ERROR
+    Log    this is DEBUG Log    DEBUG
+
+TC14 - Debug and Trace Logs
+    Set Log Level    DEBUG
+    ${a}=    Set Variable    100
+```
+
+By default only Info logs are printed on console. To print debug Logs, we need to set Log level to DEBUG. For trace level logs, we need to set it to TRACE.
+
+
+There are lot of other functions in the built-in library. We will see their usage later while writing actual tests.
+
+**13.Suite/Test information functions**
+	Set Suite Documentation
+	Set Suite Metadata
+	Set Suite Variable
+	Set Tags
+	Set Test Documentation
+	Set Test Message
+
+**14. Logs & Comments functions**
+	Comment
+	Log
+	Log Many
+	Log To Console
+	Log Variables
+
+
+
+**15. Assertion functions**
+	Length Should Be
+	Should Be Empty
+	Should Be Equal
+	Should Be Equal As Integers
+	Should Be Equal As Numbers
+	Should Be Equal As Strings
+	Should Be True
+	Should Contain
+	Should Contain Any
+	Should Contain X Times
+	Should End With
+	Should Match
+	Should Match Regexp
+	Should Not Be Empty
+	Should Not Be Equal
+	Should Not Be Equal As Integers
+	Should Not Be Equal As Numbers
+	Should Not Be Equal As Strings
+	Should Not Be True
+	Should Not Contain
+	Should Not Contain Any
+	Should Not End With
+	Should Not Match
+	Should Not Match Regexp
+	Should Not Start With
+	Should Start With
+	Variable Should Exist
+	Variable Should Not Exist
+
+
+**16. Loop functions**
+	Continue For Loop
+	Continue For Loop If
+	Exit For Loop
+	Exit For Loop If
+
+
+**17. Import functions**
+	Import Library
+	Import Resource
+	Import Variables
+
+
+**18. Other Important functions**
+	Get Count
+	Get Length
+	Get Time
+	Get Variable Value
+	Get Variables
+	Catenate
+	Evaluate
+	Fail
+	No Operation
+	Pass Execution
+	Pass Execution If
+	Fatal Error
+	Regexp Escape
+	Remove Tags
+	Set Variable
