@@ -637,3 +637,135 @@ Sleep
 ```
 
 Now you can easily see that we can use many of these functions in different ways. You can explore these. We will cover more from the list in our next sections.
+
+
+---------------------------------------------------------------
+
+
+### Lecture 2.6 - Loop Statements
+
+**Test**
+```
+TC1 - For loop using range
+    :FOR    ${i}    IN RANGE    1    10
+    \    Log    ${i}   
+```
+
+**Output**
+```
+Starting test: Project2.1.006 LoopStatements.TC1 - For loop using range
+20191213 11:22:26.610 : INFO : 1
+20191213 11:22:26.611 : INFO : 2
+20191213 11:22:26.612 : INFO : 3
+20191213 11:22:26.613 : INFO : 4
+20191213 11:22:26.614 : INFO : 5
+20191213 11:22:26.614 : INFO : 6
+20191213 11:22:26.615 : INFO : 7
+20191213 11:22:26.616 : INFO : 8
+20191213 11:22:26.617 : INFO : 9
+Ending test: Project2.1.006 LoopStatements.TC1 - For loop using range
+```
+
+**Test**
+```
+TC2 - For loop using range - with correct upper bound
+    :FOR    ${i}    IN RANGE    1    11
+    \    Log    ${i}
+
+```
+
+**Output**
+```
+Starting test: Project2.1.006 LoopStatements.TC2 - For loop using range - with correct upper bound
+20191213 11:22:26.619 : INFO : 1
+20191213 11:22:26.620 : INFO : 2
+20191213 11:22:26.621 : INFO : 3
+20191213 11:22:26.623 : INFO : 4
+20191213 11:22:26.623 : INFO : 5
+20191213 11:22:26.624 : INFO : 6
+20191213 11:22:26.625 : INFO : 7
+20191213 11:22:26.625 : INFO : 8
+20191213 11:22:26.626 : INFO : 9
+20191213 11:22:26.628 : INFO : 10
+Ending test: Project2.1.006 LoopStatements.TC2 - For loop using range - with correct upper bound
+```
+
+**Test**
+```
+TC3 - For loop using a list
+    @{a}=    Create List    1    2    3    4    5
+    :FOR    ${i}    IN    @{a}
+    \    Log    ${i}
+```
+
+**Output**
+```
+Starting test: Project2.1.006 LoopStatements.TC3 - For loop using a list
+20191213 11:22:26.630 : INFO : @{a} = [ 1 | 2 | 3 | 4 | 5 ]
+20191213 11:22:26.630 : INFO : 1
+20191213 11:22:26.631 : INFO : 2
+20191213 11:22:26.632 : INFO : 3
+20191213 11:22:26.633 : INFO : 4
+20191213 11:22:26.634 : INFO : 5
+Ending test: Project2.1.006 LoopStatements.TC3 - For loop using a list
+```
+
+**Test**
+```
+TC4 - Exit for loop in between
+    @{a}=    Create List    1    2    3    4    5
+    :FOR    ${i}    IN    @{a}
+    \    Log    ${i}
+    \    Exit For Loop
+
+TC5 - Conditional Exit from For Loop
+    @{a}=    Create List    1    2    3    4    5
+    :FOR    ${i}    IN    @{a}
+    \    Exit For Loop If    ${i}>3
+    \    Log    ${i}
+```
+
+**Output**
+```
+Starting test: Project2.1.006 LoopStatements.TC4 - Exit for loop in between
+20191213 11:22:26.635 : INFO : @{a} = [ 1 | 2 | 3 | 4 | 5 ]
+20191213 11:22:26.636 : INFO : 1
+20191213 11:22:26.637 : INFO : Exiting for loop altogether.
+Ending test: Project2.1.006 LoopStatements.TC4 - Exit for loop in between
+
+Starting test: Project2.1.006 LoopStatements.TC5 - Conditional Exit from For Loop
+20191213 11:22:26.638 : INFO : @{a} = [ 1 | 2 | 3 | 4 | 5 ]
+20191213 11:22:26.641 : INFO : 1
+20191213 11:22:26.642 : INFO : 2
+20191213 11:22:26.643 : INFO : 3
+20191213 11:22:26.645 : INFO : Exiting for loop altogether.
+Ending test: Project2.1.006 LoopStatements.TC5 - Conditional Exit from For Loop
+```
+
+**Test**
+```
+TC6 - New FOR END loop Syntax from robotframework v > 3.2
+    FOR    ${i}    IN RANGE    1    11
+        Log    ${i}
+    END
+```
+
+**Output**
+```
+Starting test: Project2.1.006 LoopStatements.TC6 - New FOR END loop Syntax from robotframework v > 3.2
+20191213 11:22:26.646 : INFO : 1
+20191213 11:22:26.647 : INFO : 2
+20191213 11:22:26.649 : INFO : 3
+20191213 11:22:26.649 : INFO : 4
+20191213 11:22:26.650 : INFO : 5
+20191213 11:22:26.651 : INFO : 6
+20191213 11:22:26.652 : INFO : 7
+20191213 11:22:26.652 : INFO : 8
+20191213 11:22:26.653 : INFO : 9
+Ending test: Project2.1.006 LoopStatements.TC6 - New FOR END loop Syntax from robotframework v > 3.2
+```
+
+---------------------------------------------------------------
+
+
+### Lecture 2.7 - Conditional Functions
