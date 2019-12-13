@@ -564,6 +564,17 @@ Ending test: Project2.1.SetupAndTeardown.TC3
 20191212 23:04:51.067 : INFO : SUITE ENDS
 ```
 
+There are certain keywords which can be used in suite teardown and/or test teardown.
+```
+Run Keyword If All Critical Tests Passed
+Run Keyword If All Tests Passed
+Run Keyword If Any Critical Tests Failed
+Run Keyword If Any Tests Failed
+Run Keyword If Test Failed
+Run Keyword If Test Passed
+Run Keyword If Timeout Occurred
+```
+
 ---------------------------------------------------------------
 
 
@@ -575,7 +586,7 @@ Adding a resource file is very easy. It can be done by right clicking on the pro
 
 A resource is more or less similar to a test suite. The only difference is that we do not write test cases in Resource files. However, we write reusable functions(called User Keywords) and we define scalars, lists and dictionaries specific to that resource.
 
-In Project 2.1, resource1.robot is a Resource which is imported in test suite 005_SuiteImportingResource.robot
+In Project 2.1, resource1.robot is a Resource which is imported in test suite 006_SuiteImportingResource.robot
 
 **resource1.robot**
 ```
@@ -589,7 +600,7 @@ UserKeyword2
 
 We can run the keywords of resource file by directly using the keyword name or by using another built-in keyword "Run Keyword".
 
-**005_SuiteImportingResource.robot**
+**006_SuiteImportingResource.robot**
 ```
 *** Settings ***
 Resource          resource1.robot
@@ -602,10 +613,10 @@ TC1
 
 **Output**
 ```
-Starting test: Project2.1.005 SuiteImportingResource.TC1
+Starting test: Project2.1.006 SuiteImportingResource.TC1
 20191213 10:13:04.779 : INFO : This is keyword 1
 20191213 10:13:04.780 : INFO : This is keyword 1
-Ending test: Project2.1.005 SuiteImportingResource.TC1
+Ending test: Project2.1.006 SuiteImportingResource.TC1
 ```
 
 We have used built-in function "Run Keyword" to run our user defined keyword. Let's go back to section 2.2, point #18 "Execution control functions"
@@ -653,7 +664,7 @@ TC1 - For loop using range
 
 **Output**
 ```
-Starting test: Project2.1.006 LoopStatements.TC1 - For loop using range
+Starting test: Project2.1.007 LoopStatements.TC1 - For loop using range
 20191213 11:22:26.610 : INFO : 1
 20191213 11:22:26.611 : INFO : 2
 20191213 11:22:26.612 : INFO : 3
@@ -663,7 +674,7 @@ Starting test: Project2.1.006 LoopStatements.TC1 - For loop using range
 20191213 11:22:26.615 : INFO : 7
 20191213 11:22:26.616 : INFO : 8
 20191213 11:22:26.617 : INFO : 9
-Ending test: Project2.1.006 LoopStatements.TC1 - For loop using range
+Ending test: Project2.1.007 LoopStatements.TC1 - For loop using range
 ```
 
 **Test**
@@ -676,7 +687,7 @@ TC2 - For loop using range - with correct upper bound
 
 **Output**
 ```
-Starting test: Project2.1.006 LoopStatements.TC2 - For loop using range - with correct upper bound
+Starting test: Project2.1.007 LoopStatements.TC2 - For loop using range - with correct upper bound
 20191213 11:22:26.619 : INFO : 1
 20191213 11:22:26.620 : INFO : 2
 20191213 11:22:26.621 : INFO : 3
@@ -687,7 +698,7 @@ Starting test: Project2.1.006 LoopStatements.TC2 - For loop using range - with c
 20191213 11:22:26.625 : INFO : 8
 20191213 11:22:26.626 : INFO : 9
 20191213 11:22:26.628 : INFO : 10
-Ending test: Project2.1.006 LoopStatements.TC2 - For loop using range - with correct upper bound
+Ending test: Project2.1.007 LoopStatements.TC2 - For loop using range - with correct upper bound
 ```
 
 **Test**
@@ -700,14 +711,14 @@ TC3 - For loop using a list
 
 **Output**
 ```
-Starting test: Project2.1.006 LoopStatements.TC3 - For loop using a list
+Starting test: Project2.1.007 LoopStatements.TC3 - For loop using a list
 20191213 11:22:26.630 : INFO : @{a} = [ 1 | 2 | 3 | 4 | 5 ]
 20191213 11:22:26.630 : INFO : 1
 20191213 11:22:26.631 : INFO : 2
 20191213 11:22:26.632 : INFO : 3
 20191213 11:22:26.633 : INFO : 4
 20191213 11:22:26.634 : INFO : 5
-Ending test: Project2.1.006 LoopStatements.TC3 - For loop using a list
+Ending test: Project2.1.007 LoopStatements.TC3 - For loop using a list
 ```
 
 **Test**
@@ -727,19 +738,19 @@ TC5 - Conditional Exit from For Loop
 
 **Output**
 ```
-Starting test: Project2.1.006 LoopStatements.TC4 - Exit for loop in between
+Starting test: Project2.1.007 LoopStatements.TC4 - Exit for loop in between
 20191213 11:22:26.635 : INFO : @{a} = [ 1 | 2 | 3 | 4 | 5 ]
 20191213 11:22:26.636 : INFO : 1
 20191213 11:22:26.637 : INFO : Exiting for loop altogether.
-Ending test: Project2.1.006 LoopStatements.TC4 - Exit for loop in between
+Ending test: Project2.1.007 LoopStatements.TC4 - Exit for loop in between
 
-Starting test: Project2.1.006 LoopStatements.TC5 - Conditional Exit from For Loop
+Starting test: Project2.1.007 LoopStatements.TC5 - Conditional Exit from For Loop
 20191213 11:22:26.638 : INFO : @{a} = [ 1 | 2 | 3 | 4 | 5 ]
 20191213 11:22:26.641 : INFO : 1
 20191213 11:22:26.642 : INFO : 2
 20191213 11:22:26.643 : INFO : 3
 20191213 11:22:26.645 : INFO : Exiting for loop altogether.
-Ending test: Project2.1.006 LoopStatements.TC5 - Conditional Exit from For Loop
+Ending test: Project2.1.007 LoopStatements.TC5 - Conditional Exit from For Loop
 ```
 
 **Test**
@@ -752,7 +763,7 @@ TC6 - New FOR END loop Syntax from robotframework v > 3.2
 
 **Output**
 ```
-Starting test: Project2.1.006 LoopStatements.TC6 - New FOR END loop Syntax from robotframework v > 3.2
+Starting test: Project2.1.007 LoopStatements.TC6 - New FOR END loop Syntax from robotframework v > 3.2
 20191213 11:22:26.646 : INFO : 1
 20191213 11:22:26.647 : INFO : 2
 20191213 11:22:26.649 : INFO : 3
@@ -762,10 +773,173 @@ Starting test: Project2.1.006 LoopStatements.TC6 - New FOR END loop Syntax from 
 20191213 11:22:26.652 : INFO : 7
 20191213 11:22:26.652 : INFO : 8
 20191213 11:22:26.653 : INFO : 9
-Ending test: Project2.1.006 LoopStatements.TC6 - New FOR END loop Syntax from robotframework v > 3.2
+Ending test: Project2.1.007 LoopStatements.TC6 - New FOR END loop Syntax from robotframework v > 3.2
 ```
 
 ---------------------------------------------------------------
 
 
 ### Lecture 2.7 - Conditional Functions
+
+Unlike any programming language, there is no If..Else or Switch..Case statement in robot framework. However, there is a set of functions which are used to implement conditional logic in pur tests.
+
+Here is the list of functions I am talking about.
+
+```
+Set Variable If
+Get Variable Value
+Run Keyword If
+Run Keyword Unless
+Continue For Loop If
+Exit For Loop If
+Pass Execution If
+Return From Keyword If
+Run Keyword And Return If
+Run Keyword If All Critical Tests Passed
+Run Keyword If All Tests Passed
+Run Keyword If Any Critical Tests Failed
+Run Keyword If Any Tests Failed
+Run Keyword If Test Failed
+Run Keyword If Test Passed
+Run Keyword If Timeout Occurred
+```
+
+
+```
+*** Settings ***
+Resource          resource1.robot
+
+*** Test Cases ***
+TC1 - Set Variable If
+    #If condition returns true
+    ${cond}=    Set Variable    True
+    ${a}=    Set Variable If    ${cond}==True    10
+    Log    ${a}
+    #If condition returns false
+    ${a}=    Set Variable If    ${cond}==False    10    0
+    Log    ${a}
+    
+TC2 - Run Keyword If
+    ${cond}=    Set Variable    True
+    Run Keyword If    ${cond}==True    UserKeyword1    ELSE    UserKeyword2        
+    
+TC3 - Run Keyword Unless
+    FOR    ${i}    IN RANGE    1    10
+        Log    ------
+        Run Keyword Unless    ${i}>5    Log    Iteration=${i}
+    END
+    
+TC4 - Continue For Loop If
+    FOR    ${i}    IN RANGE    1    10
+        Log    Starting ${i}
+        Continue For Loop If    ${i}>5
+        Log    Ending ${i}
+    END
+    
+TC5 - Exit For Loop If
+    FOR    ${i}    IN RANGE    1    10
+        Log    Starting ${i}
+        Exit For Loop If    ${i}>5
+        Log    Ending ${i}
+    END
+    
+TC6 - Pass Execution If
+    ${i}=    Set Variable    10
+    Pass Execution If    ${i}>5    Passing the execution    
+    Fail    Forcefully failing the test
+    
+TC7 - Return From Keyword If
+    ${b}=    Userkeyword3
+
+#TC8 - Run Keyword And Return If
+    #we will see the usage later
+
+*** Keywords ***
+Userkeyword3
+    ${a}=    Set Variable    10    
+    Return From Keyword If    ${a}<5    Hello
+    Return From Keyword If    ${a}>5    Hi
+    
+```
+
+
+Output
+```
+Starting test: Project2.1.008 ConditionalFunctions.TC1 - Set Variable If
+20191213 14:03:58.828 : INFO : ${cond} = True
+20191213 14:03:58.828 : INFO : ${a} = 10
+20191213 14:03:58.828 : INFO : 10
+20191213 14:03:58.828 : INFO : ${a} = 0
+20191213 14:03:58.828 : INFO : 0
+Ending test: Project2.1.008 ConditionalFunctions.TC1 - Set Variable If
+
+Starting test: Project2.1.008 ConditionalFunctions.TC2 - Run Keyword If
+20191213 14:03:58.828 : INFO : ${cond} = True
+20191213 14:03:58.828 : INFO : This is keyword 1
+Ending test: Project2.1.008 ConditionalFunctions.TC2 - Run Keyword If
+
+Starting test: Project2.1.008 ConditionalFunctions.TC3 - Run Keyword Unless
+20191213 14:03:58.828 : INFO : ------
+20191213 14:03:58.828 : INFO : Iteration=1
+20191213 14:03:58.828 : INFO : ------
+20191213 14:03:58.828 : INFO : Iteration=2
+20191213 14:03:58.828 : INFO : ------
+20191213 14:03:58.844 : INFO : Iteration=3
+20191213 14:03:58.844 : INFO : ------
+20191213 14:03:58.844 : INFO : Iteration=4
+20191213 14:03:58.844 : INFO : ------
+20191213 14:03:58.844 : INFO : Iteration=5
+20191213 14:03:58.844 : INFO : ------
+20191213 14:03:58.844 : INFO : ------
+20191213 14:03:58.844 : INFO : ------
+20191213 14:03:58.844 : INFO : ------
+Ending test: Project2.1.008 ConditionalFunctions.TC3 - Run Keyword Unless
+
+Starting test: Project2.1.008 ConditionalFunctions.TC4 - Continue For Loop If
+20191213 14:03:58.844 : INFO : Starting 1
+20191213 14:03:58.844 : INFO : Ending 1
+20191213 14:03:58.844 : INFO : Starting 2
+20191213 14:03:58.844 : INFO : Ending 2
+20191213 14:03:58.844 : INFO : Starting 3
+20191213 14:03:58.844 : INFO : Ending 3
+20191213 14:03:58.860 : INFO : Starting 4
+20191213 14:03:58.860 : INFO : Ending 4
+20191213 14:03:58.860 : INFO : Starting 5
+20191213 14:03:58.860 : INFO : Ending 5
+20191213 14:03:58.860 : INFO : Starting 6
+20191213 14:03:58.860 : INFO : Continuing for loop from the next iteration.
+20191213 14:03:58.860 : INFO : Starting 7
+20191213 14:03:58.860 : INFO : Continuing for loop from the next iteration.
+20191213 14:03:58.860 : INFO : Starting 8
+20191213 14:03:58.860 : INFO : Continuing for loop from the next iteration.
+20191213 14:03:58.860 : INFO : Starting 9
+20191213 14:03:58.860 : INFO : Continuing for loop from the next iteration.
+Ending test: Project2.1.008 ConditionalFunctions.TC4 - Continue For Loop If
+
+Starting test: Project2.1.008 ConditionalFunctions.TC5 - Exit For Loop If
+20191213 14:03:58.860 : INFO : Starting 1
+20191213 14:03:58.860 : INFO : Ending 1
+20191213 14:03:58.860 : INFO : Starting 2
+20191213 14:03:58.860 : INFO : Ending 2
+20191213 14:03:58.860 : INFO : Starting 3
+20191213 14:03:58.860 : INFO : Ending 3
+20191213 14:03:58.875 : INFO : Starting 4
+20191213 14:03:58.875 : INFO : Ending 4
+20191213 14:03:58.875 : INFO : Starting 5
+20191213 14:03:58.875 : INFO : Ending 5
+20191213 14:03:58.875 : INFO : Starting 6
+20191213 14:03:58.875 : INFO : Exiting for loop altogether.
+Ending test: Project2.1.008 ConditionalFunctions.TC5 - Exit For Loop If
+
+Starting test: Project2.1.008 ConditionalFunctions.TC6 - Pass Execution If
+20191213 14:03:58.875 : INFO : ${i} = 10
+20191213 14:03:58.875 : INFO : Execution passed with message:
+Passing the execution
+Ending test: Project2.1.008 ConditionalFunctions.TC6 - Pass Execution If
+
+Starting test: Project2.1.008 ConditionalFunctions.TC7 - Return From Keyword If
+20191213 14:03:58.875 : INFO : ${a} = 10
+20191213 14:03:58.875 : INFO : Returning from the enclosing user keyword.
+20191213 14:03:58.875 : INFO : ${b} = Hi
+Ending test: Project2.1.008 ConditionalFunctions.TC7 - Return From Keyword If
+```
