@@ -564,16 +564,100 @@ Ending test: Project2.1.SetupAndTeardown.TC3
 20191212 23:04:51.067 : INFO : SUITE ENDS
 ```
 
-There are certain keywords which can be used in suite teardown and/or test teardown.
+There are certain keywords which can be used in suite teardown.
 ```
 Run Keyword If All Critical Tests Passed
 Run Keyword If All Tests Passed
 Run Keyword If Any Critical Tests Failed
 Run Keyword If Any Tests Failed
+```
+
+Before we use the keywords to behave in a certain way for critical or non-critical tests, it is important to know how we mark tests CRITICAL or NON-CRITICAL in robot framework.
+
+To mark tests critical, use tags to differentiate between the tests. While executing, you need to use --critical <tagname> or --noncritical <tagname>.
+
+For example, in below code I have used tag critical for TC1 and TC3. When I run tests normally, all the tests would be considered critical by default. But if I want only test cases with tag "critical" to be considered as critical, I need to execute with arguments --critical critical
+
+Right click on test suite, click Run as > Run configurations.. and put this is arguments "--critical critical"
+
+![Run critical tests in RED](../images/listvariable.png)
+
+```
+*** Settings ***
+Suite Setup       suite_setup
+Suite Teardown    suite_teardown
+Test Setup        test_setup
+Test Teardown     test_teardown
+
+*** Test Cases ***
+TC1
+    [Tags]    critical
+    Log    1
+
+TC2
+    [Tags]    non-critical
+    Log    2
+    Fail
+
+TC3
+    [Tags]    critical
+    Log    3
+
+*** Keywords ***
+suite_setup
+    Log    SuiteStarts
+
+suite_teardown
+    Run Keyword If All Critical Tests Passed    UserKeyword4
+    LOG    SUITE ENDS
+
+test_setup
+    LOG    TEST START
+
+test_teardown
+    Log    TEST ENDS
+
+UserKeyword4
+    Log    All critical tests passed
+```
+
+**Output**
+```
+20191213 16:34:16.727 : INFO : SuiteStarts
+Starting test: Project2.1.006 SetupAndTearDownFunctions.TC1
+20191213 16:34:16.729 : INFO : TEST START
+20191213 16:34:16.730 : INFO : 1
+20191213 16:34:16.731 : INFO : TEST ENDS
+Ending test: Project2.1.006 SetupAndTearDownFunctions.TC1
+
+Starting test: Project2.1.006 SetupAndTearDownFunctions.TC2
+20191213 16:34:16.733 : INFO : TEST START
+20191213 16:34:16.734 : INFO : 2
+20191213 16:34:16.735 : FAIL : AssertionError
+20191213 16:34:16.737 : INFO : TEST ENDS
+Ending test: Project2.1.006 SetupAndTearDownFunctions.TC2
+
+Starting test: Project2.1.006 SetupAndTearDownFunctions.TC3
+20191213 16:34:16.739 : INFO : TEST START
+20191213 16:34:16.740 : INFO : 3
+20191213 16:34:16.741 : INFO : TEST ENDS
+Ending test: Project2.1.006 SetupAndTearDownFunctions.TC3
+
+20191213 16:34:16.743 : INFO : All critical tests passed
+20191213 16:34:16.744 : INFO : SUITE ENDS
+```
+
+See the second last line of output "All critical tests passed". Now you can easily try other three keywords.
+
+There are certain keywords which are for test teardown.
+
+```
 Run Keyword If Test Failed
 Run Keyword If Test Passed
 Run Keyword If Timeout Occurred
 ```
+
+All these are self-explainatory. If you need more information on this, then write to me.
 
 ---------------------------------------------------------------
 
