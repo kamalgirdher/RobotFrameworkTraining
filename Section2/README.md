@@ -342,7 +342,35 @@ Import Resource
 Import Variables
 ```
 
-**18. Other Important functions**
+**18. Execution control keywords**
+```
+Call Method
+Keyword Should Exist
+Return From Keyword
+Return From Keyword If
+Run Keyword
+Run Keyword And Continue On Failure
+Run Keyword And Expect Error
+Run Keyword And Ignore Error
+Run Keyword And Return
+Run Keyword And Return If
+Run Keyword And Return Status
+Run Keyword If
+Run Keyword If All Critical Tests Passed
+Run Keyword If All Tests Passed
+Run Keyword If Any Critical Tests Failed
+Run Keyword If Any Tests Failed
+Run Keyword If Test Failed
+Run Keyword If Test Passed
+Run Keyword If Timeout Occurred
+Run Keyword Unless
+Run Keywords
+Repeat Keyword
+Wait Until Keyword Succeeds
+Sleep
+```
+
+**19. Other Important functions**
 ```
 Get Count
 Get Length
@@ -535,3 +563,77 @@ Ending test: Project2.1.SetupAndTeardown.TC3
 
 20191212 23:04:51.067 : INFO : SUITE ENDS
 ```
+
+---------------------------------------------------------------
+
+
+### Lecture 2.5 - External resources
+
+![Adding Resource file in RED](../images/RED_resourceFile.png)
+
+Adding a resource file is very easy. It can be done by right clicking on the project and select New > Robot Resource file in RED. And in RIDE simply by clicking New Resource.
+
+A resource is more or less similar to a test suite. The only difference is that we do not write test cases in Resource files. However, we write reusable functions(called User Keywords) and we define scalars, lists and dictionaries specific to that resource.
+
+In Project 2.1, resource1.robot is a Resource which is imported in test suite 005_SuiteImportingResource.robot
+
+**resource1.robot**
+```
+*** Keywords ***
+UserKeyword1
+    Log    This is keyword 1
+
+UserKeyword2
+    Log    This is keyword 2
+```
+
+We can run the keywords of resource file by directly using the keyword name or by using another built-in keyword "Run Keyword".
+
+**005_SuiteImportingResource.robot**
+```
+*** Settings ***
+Resource          resource1.robot
+
+*** Test Cases ***
+TC1
+    Run Keyword    UserKeyword1
+    UserKeyword1
+```
+
+**Output**
+```
+Starting test: Project2.1.005 SuiteImportingResource.TC1
+20191213 10:13:04.779 : INFO : This is keyword 1
+20191213 10:13:04.780 : INFO : This is keyword 1
+Ending test: Project2.1.005 SuiteImportingResource.TC1
+```
+
+We have used built-in function "Run Keyword" to run our user defined keyword. Let's go back to section 2.2, point #18 "Execution control functions"
+```
+Call Method
+Keyword Should Exist
+Return From Keyword
+Return From Keyword If
+Run Keyword
+Run Keyword And Continue On Failure
+Run Keyword And Expect Error
+Run Keyword And Ignore Error
+Run Keyword And Return
+Run Keyword And Return If
+Run Keyword And Return Status
+Run Keyword If
+Run Keyword If All Critical Tests Passed
+Run Keyword If All Tests Passed
+Run Keyword If Any Critical Tests Failed
+Run Keyword If Any Tests Failed
+Run Keyword If Test Failed
+Run Keyword If Test Passed
+Run Keyword If Timeout Occurred
+Run Keyword Unless
+Run Keywords
+Repeat Keyword
+Wait Until Keyword Succeeds
+Sleep
+```
+
+Now you can easily see that we can use many of these functions in different ways. You can explore these. We will cover more from the list in our next sections.
