@@ -121,6 +121,7 @@ Switch Browser
 Switch Window
 Unselect Checkbox
 ```
+
 -------------------------------------------------------------
 
 ### Lecture 3.4 - Wait statements
@@ -136,6 +137,7 @@ The explicit wait is used to ask webdriver to wait for some conditions with max 
 3. Fluent Wait
 The fluent wait is used ask webdriver to wait for a condition as well as frequency by which we want to check the condition before throwing an "ElementNotVisibleException" exception.
 
+In robotframework, we have these functions to apply waits.
 ```
 Wait For Condition
 Wait Until Element Contains
@@ -149,4 +151,103 @@ Wait Until Page Contains
 Wait Until Page Contains Element
 Wait Until Page Does Not Contain
 Wait Until Page Does Not Contain Element
+```
+
+-------------------------------------------------------------
+
+### Lecture 3.5 - Assertions
+
+In builtin libray, we have lot of functions that are used to put assertions in one or other way. Now we can add assetion in our test in such a way that we use **Get Text** function from SeleniumLibrary and compare with Expected text using **Should Be Equal** function of builtin library.
+
+```
+${a}=	Get Text	//a[@id='fname']
+Should be Equal    ${a}    Kamal
+```
+
+Here is the list of functions we have in builtin library for assertions/checkpoints.
+
+```
+Length Should Be
+Should Be Empty
+Should Be Equal
+Should Be Equal As Integers
+Should Be Equal As Numbers
+Should Be Equal As Strings
+Should Be True
+Should Contain
+Should Contain Any
+Should Contain X Times
+Should End With
+Should Match
+Should Match Regexp
+Should Not Be Empty
+Should Not Be Equal
+Should Not Be Equal As Integers
+Should Not Be Equal As Numbers
+Should Not Be Equal As Strings
+Should Not Be True
+Should Not Contain
+Should Not Contain Any
+Should Not End With
+Should Not Match
+Should Not Match Regexp
+Should Not Start With
+Should Start With
+Variable Should Exist
+Variable Should Not Exist
+```
+
+Apart from these functions, **SeleniumLibrary** also gives some more functions which are very frequently used at one or other place while we write web based automated tests.
+
+```
+Alert Should Be Present
+Alert Should Not Be Present
+Checkbox Should Be Selected
+Checkbox Should Not Be Selected
+Element Should Be Disabled
+Element Should Be Enabled
+Element Should Be Focused
+Element Should Be Visible
+Element Should Contain
+Element Should Not Be Visible
+Element Should Not Contain
+Element Text Should Be
+Element Text Should Not Be
+Frame Should Contain
+List Selection Should Be
+List Should Have No Selections
+Location Should Be
+Location Should Contain
+Locator Should Match X Times
+Page Should Contain
+Page Should Contain Button
+Page Should Contain Checkbox
+Page Should Contain Element
+Page Should Contain Image
+Page Should Contain Link
+Page Should Contain List
+Page Should Contain Radio Button
+Page Should Contain Textfield
+Page Should Not Contain
+Page Should Not Contain Button
+Page Should Not Contain Checkbox
+Page Should Not Contain Element
+Page Should Not Contain Image
+Page Should Not Contain Link
+Page Should Not Contain List
+Page Should Not Contain Radio Button
+Page Should Not Contain Textfield
+Radio Button Should Be Set To
+Radio Button Should Not Be Selected
+Table Cell Should Contain
+Table Column Should Contain
+Table Footer Should Contain
+Table Header Should Contain
+Table Row Should Contain
+Table Should Contain
+Textarea Should Contain
+Textarea Value Should Be
+Textfield Should Contain
+Textfield Value Should Be
+Title Should Be
 ```
