@@ -270,12 +270,15 @@ Browser Windows
 There are three types of alerts.
 
 1. Simple alert
+
 ![Simple alert](../images/simpleAlert.png)
 
 2. Confirmation alert
+
 ![Confirmation alert](../images/confirmationAlert.png)
 
 3. Prompt alert
+
 ![Prompt alert](../images/promptAlert.png)
 
 
