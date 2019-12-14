@@ -43,6 +43,7 @@ Robot Framework libraries such as SeleniumLibrary for web UI automation
 
 Introduction to API Testing library with Robot Framework
 
+
 **ABOUT THE AUTHOR**
 
 Kamal Girdher is a Lead automation architect, with rich experience on automation of web, mobile and web service applications. He is a Youtuber, blogger and therefore passionate about teaching thousands of people all over the world.
@@ -70,6 +71,7 @@ Integration with CI tools (Jenkins)
 
 
 
+
 --------------------------------------------
 
 
@@ -88,6 +90,8 @@ Integration with CI tools (Jenkins)
 1.5 - RIDE and RED IDE for RF
 
 
+
+
 **SECTION TWO** - Key concepts of Robot framework - Variables, Loops
 
 2.1 - Test cases, Test Suite and User Keywords
@@ -103,6 +107,8 @@ Integration with CI tools (Jenkins)
 2.6 - Loop statements
 
 2.7 - Conditional functions
+
+
 
 
 **SECTION THREE** - Selenium and SeleniumLibrary
@@ -126,6 +132,8 @@ Integration with CI tools (Jenkins)
 3.9 - Project setup
 
 
+
+
 **SECTION FOUR** - RequestsLibrary for Robot framework
 
 4.1 - Introduction to REST services
@@ -137,6 +145,8 @@ Integration with CI tools (Jenkins)
 4.4 - Assertions
 
 4.5 - Project setup
+
+
 
 
 **SECTION FIVE** - Integration with CI tools (Jenkins)
