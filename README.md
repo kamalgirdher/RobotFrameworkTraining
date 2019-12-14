@@ -2,10 +2,6 @@
 ## Robot Framework Test Automation
 
 
-### Learn the keyword driven test automation framework for Web UI, API testing and take your skills to next level
-
-**AUTHOR NAME - Kamal Girdher**
-
 ### OVERVIEW
 
 Robot Framework is a pre-built test automation framework. It is used for simplifying your test automation process. With Robot, you can run a variety of automated tests with the assistance of Selenium Webdriver, API, Database, etc. Robot Framework is easier to learn than other frameworks and it helps you automate your tests with ease. 
