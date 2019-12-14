@@ -1,32 +1,32 @@
 
-##Robot Framework Test Automation
+## Robot Framework Test Automation
 
-###Learn the keyword driven test automation framework for Web UI, API testing and take your skills to next level
+### Learn the keyword driven test automation framework for Web UI, API testing and take your skills to next level
 
 **AUTHOR NAME - Kamal Girdher**
 
-###OVERVIEW
+### OVERVIEW
 
 Robot Framework is a pre-built test automation framework. It is used for simplifying your test automation process. With Robot, you can run a variety of automated tests with the assistance of Selenium Webdriver, API, Database, etc. Robot Framework is easier to learn than other frameworks and it helps you automate your tests with ease. 
 This course begins with covering the features, functionalities, and the use of Robot framework along with setting up the development environment wherein you will create a project and a script directory. You will then deep dive into the essential concepts of the framework such as functions, variables, loops, and test libraries with practical use cases. You will also learn how Selenium and SeleniumLibrary are used along with Robot framework for writing test cases. Next, you will focus on automating REST based web services by using  RequestsLibrary in Robot framework. Finally, to automate the test process you will learn to deploy your tests using Jenkins.
 By the end of the course, you will be well-versed in using Robot Framework for your test automation requirements. 
 
 
-###TARGET AUDIENCE
+### TARGET AUDIENCE
 This course is for Quality Assurances, Quality Controllers and Testers who want to perform automation testing using Robot Framework due to its simplicity. No prior knowledge of Robot Framework and Selenium WebDriver is required.
 
 
-###KEY FEATURES
+### KEY FEATURES
 Get well-versed with Web Automation using Robot Framework
 Automate any website with confidence and skills gained in this course
 Execute test scripts on a real website to acquire real-world industry specific scenarios
 
 
-###APPROACH
+### APPROACH
 The course will follow hands-on approach. Each concept will first be explained in theory and then it will be followed by a hands-on practical examples.  Best test automation practices will also be discussed to give the student an idea about how things work in industry.
 
 
-###WHAT WILL YOU LEARN
+### WHAT WILL YOU LEARN
 Gain a complete understanding of Web Automation using Robot Framework.
 
 Automate web based applications and web services using Robot framework
@@ -53,7 +53,7 @@ http://megettingerror.blogspot.in/
 http://exceltalk.blogspot.in/
 
 
-###SUMMARY OF CONTENTS
+### SUMMARY OF CONTENTS
  Introduction on Robot Framework and Environment Setup
  Key concepts of Robot framework - Variables, Loops
  Selenium and SeleniumLibrary
@@ -65,7 +65,7 @@ http://exceltalk.blogspot.in/
 --------------------------------------------
 
 
-##COURSE ROADMAP
+## COURSE ROADMAP
 
 **SECTION ONE** - INTRODUCTION ON ROBOT FRAMEWORK AND ENVIRONMENT SETUP
 1.1 - Introduction to Robot framework
