@@ -45,6 +45,8 @@ Robot Framework libraries such as SeleniumLibrary for web UI automation
 Introduction to API Testing library with Robot Framework
 
 
+----------------------------------------------------
+
 **ABOUT THE AUTHOR**
 
 ![Kamal](images/kamal.png)
@@ -58,6 +60,8 @@ https://www.linkedin.com/in/kamal-girdher-08691932/
 http://megettingerror.blogspot.in/
 
 http://exceltalk.blogspot.in/
+
+----------------------------------------------------
 
 
 ### SUMMARY OF CONTENTS
