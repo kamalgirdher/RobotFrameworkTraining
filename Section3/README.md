@@ -257,4 +257,29 @@ Title Should Be
 
 ### Lecture 3.6 - Switching to windows and popups
 
+While working with web based application we generally see some other dialog or windows popping in as a result of some events on the page. These windows or dialogs are of 3 types:
+
+```
+Alerts
+Popups
+Browser Windows
+```
+
+
+**Alerts**
+There are three types of alerts.
+
+1. Simple alert
+![Simple alert](../images/simpleAlert.png)
+
+2. Confirmation alert
+![Confirmation alert](../images/confirmationAlert.png)
+
+3. Prompt alert
+![Prompt alert](../images/promptAlert.png)
+
+
+Alerts - Handle Alerts
+Popup - Switch Window
+Browser - Switch Browser
 
