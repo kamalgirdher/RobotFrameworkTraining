@@ -255,7 +255,7 @@ Title Should Be
 
 -------------------------------------------------------------
 
-### Lecture 3.6 - Switching to windows and popups
+### Lecture 3.6 - Handling Alerts
 
 While working with web based application we generally see some other dialog or windows popping in as a result of some events on the page. These windows or dialogs are of 3 types:
 
@@ -281,8 +281,32 @@ There are three types of alerts.
 
 ![Prompt alert](../images/promptAlert.png)
 
+Alerts are handled using 2 keywords in robot framework, i.e., **Handle Alert** and **Input Text Into Alert**  Run this test to see behavior of all 3 types of alerts.
+```
+*** Settings ***
+Library           SeleniumLibrary
 
-Alerts - Handle Alerts
+*** Test Cases ***
+TC1
+    Open Browser    https://www.google.com    chrome
+    Execute Javascript    alert("Create a simple alert.")
+    Sleep    2s
+    Handle Alert    ACCEPT
+    Sleep    1s
+    Execute Javascript    var x= confirm("Confirmation alert.")
+    Sleep    2s
+    Handle Alert    DISMISS
+    Sleep    1s
+    Execute Javascript    var y= prompt("Prompt alert.")
+    Sleep    2s
+    Input Text Into Alert    hello there    ACCEPT
+```
+
+
+-------------------------------------------------------------
+
+### Lecture 3.7 - Switching to windows and popups
+
 Popup - Switch Window
 Browser - Switch Browser
 
