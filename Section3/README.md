@@ -79,7 +79,47 @@ TC5 - Selecting from a dropdown
 Below is the list of functions used for interactions with web elements:
 
 ```
-
+Choose File
+Clear Element Text
+Click Button
+Click Element
+Click Element At Coordinates
+Click Image
+Click Link
+Close All Browsers
+Close Browser
+Close Window
+Cover Element
+Double Click Element
+Drag And Drop
+Drag And Drop By Offset
+Go Back
+Go To
+Input Password
+Input Text
+Input Text Into Alert
+Maximize Browser Window
+Mouse Down
+Mouse Down On Image
+Mouse Down On Link
+Mouse Out
+Mouse Over
+Mouse Up
+Open Browser
+Open Context Menu
+Press Key
+Press Keys
+Reload Page
+Scroll Element Into View
+Select Checkbox
+Select Frame
+Select Radio Button
+Select Window
+Set Focus To Element
+Submit Form
+Switch Browser
+Switch Window
+Unselect Checkbox
 ```
 -------------------------------------------------------------
 
