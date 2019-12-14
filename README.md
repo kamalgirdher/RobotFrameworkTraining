@@ -1,5 +1,92 @@
-
 ## Robot Framework Test Automation
+
+
+### COURSE ROADMAP
+
+**SECTION 1** - INTRODUCTION ON ROBOT FRAMEWORK AND ENVIRONMENT SETUP
+
+1.1 - Introduction to Robot framework
+
+1.2 - Edge of Robot framework over other automation tools/frameworks
+
+1.3 - Installation
+
+1.4 - Basic script
+
+1.5 - RIDE and RED IDE for RF
+
+
+
+
+**SECTION 2** - Key concepts of Robot framework - Variables, Loops
+
+2.1 - Test cases, Test Suite and User Keywords
+
+2.2 - Built-in Library
+
+2.3 - Scalars, Lists, Dictionaries and Variable files
+
+2.4 - Suite/Test setup teardown
+
+2.5 - External resources
+
+2.6 - Loop statements
+
+2.7 - Conditional functions
+
+
+
+
+**SECTION 3** - Selenium and SeleniumLibrary
+
+3.1 - Introduction to Selenium & SeleniumLibrary
+
+3.2 - Object Identification techniques
+
+3.3 - Operations on web elements
+
+3.4 - Wait statements
+
+3.5 - Assertions
+
+3.6 - Switching to windows and popups
+
+3.7 - Switching to frames
+
+3.8 - Handling Alerts
+
+3.9 - Project setup
+
+
+
+
+**SECTION 4** - RequestsLibrary for Robot framework
+
+4.1 - Introduction to REST services
+
+4.2 - Various HTTP request methods
+
+4.3 - Headers and params
+
+4.4 - Assertions
+
+4.5 - Project setup
+
+
+
+
+**SECTION 5** - Integration with CI tools (Jenkins)
+
+5.1 - CLI (command line interface) for Robot framework
+
+5.2 - Parallel execution
+
+5.3 - Integration with Jenkins
+
+5.4 - Tagging(Grouping) and selective execution
+
+----------------------------------------------------------
+
 
 
 ### OVERVIEW
@@ -72,92 +159,3 @@ RequestsLibrary for Robot framework
 
 Integration with CI tools (Jenkins)
 
-
-
-
---------------------------------------------
-
-
-## COURSE ROADMAP
-
-**SECTION ONE** - INTRODUCTION ON ROBOT FRAMEWORK AND ENVIRONMENT SETUP
-
-1.1 - Introduction to Robot framework
-
-1.2 - Edge of Robot framework over other automation tools/frameworks
-
-1.3 - Installation
-
-1.4 - Basic script
-
-1.5 - RIDE and RED IDE for RF
-
-
-
-
-**SECTION TWO** - Key concepts of Robot framework - Variables, Loops
-
-2.1 - Test cases, Test Suite and User Keywords
-
-2.2 - Built-in Library
-
-2.3 - Scalars, Lists, Dictionaries and Variable files
-
-2.4 - Suite/Test setup teardown
-
-2.5 - External resources
-
-2.6 - Loop statements
-
-2.7 - Conditional functions
-
-
-
-
-**SECTION THREE** - Selenium and SeleniumLibrary
-
-3.1 - Introduction to Selenium & SeleniumLibrary
-
-3.2 - Object Identification techniques
-
-3.3 - Operations on web elements
-
-3.4 - Wait statements
-
-3.5 - Assertions
-
-3.6 - Switching to windows and popups
-
-3.7 - Switching to frames
-
-3.8 - Handling Alerts
-
-3.9 - Project setup
-
-
-
-
-**SECTION FOUR** - RequestsLibrary for Robot framework
-
-4.1 - Introduction to REST services
-
-4.2 - Various HTTP request methods
-
-4.3 - Headers and params
-
-4.4 - Assertions
-
-4.5 - Project setup
-
-
-
-
-**SECTION FIVE** - Integration with CI tools (Jenkins)
-
-5.1 - CLI (command line interface) for Robot framework
-
-5.2 - Parallel execution
-
-5.3 - Integration with Jenkins
-
-5.4 - Tagging(Grouping) and selective execution

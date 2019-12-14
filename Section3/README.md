@@ -251,3 +251,10 @@ Textfield Should Contain
 Textfield Value Should Be
 Title Should Be
 ```
+
+
+-------------------------------------------------------------
+
+### Lecture 3.6 - Switching to windows and popups
+
+
