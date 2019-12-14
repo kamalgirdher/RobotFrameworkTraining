@@ -124,3 +124,29 @@ Unselect Checkbox
 -------------------------------------------------------------
 
 ### Lecture 3.4 - Wait statements
+
+In Selenium, Waits play important role in test execution. There are 3 types of waits in Selenium:
+
+1. Implicit Wait
+The implicit wait will ask webdriver to wait for certain amount of time before it throws "No Such Element Exception". The default setting is 0. Once we set the time, webdriver will wait for that time before throwing an exception.
+
+2. Explicit Wait
+The explicit wait is used to ask webdriver to wait for some conditions with max time limit, before throwing an "ElementNotVisibleException" exception. 
+
+3. Fluent Wait
+The fluent wait is used ask webdriver to wait for a condition as well as frequency by which we want to check the condition before throwing an "ElementNotVisibleException" exception.
+
+```
+Wait For Condition
+Wait Until Element Contains
+Wait Until Element Does Not Contain
+Wait Until Element Is Enabled
+Wait Until Element Is Not Visible
+Wait Until Element Is Visible
+Wait Until Location Contains
+Wait Until Location Is
+Wait Until Page Contains
+Wait Until Page Contains Element
+Wait Until Page Does Not Contain
+Wait Until Page Does Not Contain Element
+```
