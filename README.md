@@ -47,7 +47,7 @@ Introduction to API Testing library with Robot Framework
 
 **ABOUT THE AUTHOR**
 
-![Kamal](../images/kamal.jpeg)
+![Kamal](../images/kamal.png)
 
 Kamal Girdher is a Lead automation architect, with rich experience on automation of web, mobile and web service applications. He is a Youtuber, blogger and therefore passionate about teaching thousands of people all over the world.
 
