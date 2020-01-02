@@ -307,6 +307,54 @@ TC1
 
 ### Lecture 3.7 - Switching to windows and popups
 
-Popup - Switch Window
-Browser - Switch Browser
+To switch between multiple browser windows, we can use "Switch Browser" keyword of SeleniumLibrary.
+
+```
+TC1
+    ${a}=    Open Browser    https://www.google.com    chrome
+    ${b}=    Open Browser    https://www.google.co.in    chrome
+    Switch Browser    ${a}
+    Maximize Browser Window
+    Input Text    //input[@class='gLFyf gsfi']    Kamal Girdher    
+    Switch Browser    ${b}
+    Maximize Browser Window
+    Input Text    //input[@class='gLFyf gsfi']    xtremeExcel
+```
+
+In our previous section, we have seen that alerts are different than browser windows. Now we see how these two are different from **popups**
+
+A pop-up window is a type of window that opens without the user selecting "New Window" from a program's File menu. Some pop-up ads show up in front of the main window, while others show up behind the main browser window. Ads that appear behind open windows are also called "pop-under" ads.
+
+To handle popups using SeleniumLibrary, we have  keyword "Select Window" to switch to that popup.
+
+```
+TC2 - Handling popups
+    ${a}=    Open Browser    http://demo.guru99.com/popup.php    chrome
+    Click Element    //*[text()='Click Here']
+    Select Window    NEW
+    Input text    //input[@name='emailid']    kamal@kamal.com
+    Sleep    2s
+    Close Window
+    Select Window    MAIN
+    Sleep    2s
+    Close Window    
+```
+
+
+-------------------------------------------------------------
+
+### Lecture 3.8 - Switching to frames
+
+An iFrame (Inline Frame) is an HTML document embedded inside the current HTML document on a website. iFrame HTML element is used to insert content from another source, such as an advertisement, into a Web page.
+
+To access elements on a frame, we first need to switch to that frame. In SeleniumLibrary, we have a function named as **Select Frame**. This is used to switch to the frame and let us access elements on that frame.
+
+If there is a frame inside another frame and we need to access element on inner frame, switching need to be done in sequential order.
+**Main HTML  >  Frame 1  >  Frame 2  >  Element**
+
+```
+Select Frame    Frame1
+Select Frame    Frame2
+Click Element    Element locator
+```
 
