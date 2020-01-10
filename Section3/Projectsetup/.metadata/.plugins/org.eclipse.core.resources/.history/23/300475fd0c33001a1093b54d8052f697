@@ -1,0 +1,5 @@
+*** Keywords ***
+PerformImport
+    Import Variables    ../../Config/${SUITE_NAME}.py
+    Import Variables    ../../Testdata/${SUITE_NAME}.py
+    

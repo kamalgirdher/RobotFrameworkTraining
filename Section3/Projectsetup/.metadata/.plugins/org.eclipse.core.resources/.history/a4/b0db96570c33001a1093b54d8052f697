@@ -1,0 +1,19 @@
+*** Settings ***
+Variables    ../Config/${SUITE_NAME}.py
+Variables    ../Testdata/${SUITE_NAME}.py
+Variables    ../Locale/${SUITE_NAME}_${Locale}.py
+
+
+
+*** Test Cases ***
+TC1
+    Log    Start test case 1
+    Log    ${data1}
+
+TC2
+    Log    Start test case 2
+    Log    ${config1}
+    
+TC3
+    Log    Start test case 2
+    

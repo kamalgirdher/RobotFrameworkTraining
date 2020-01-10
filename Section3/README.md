@@ -358,3 +358,11 @@ Select Frame    Frame2
 Click Element    Element locator
 ```
 
+
+-------------------------------------------------------------
+
+### Lecture 3.9 - Project setup
+
+A structure helps organize various components of test automation frameworkand make it more effective. A framework is often composed of a relevant list of categories. For a automation test framework, we can think of isolating configuration, test data, locale and object repository from the test cases(scripts).
+
+![project setup](../images/selectorTechniques/projectSetup.png)

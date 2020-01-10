@@ -1,0 +1,3 @@
+*** Keywords ***
+SpecificFunction3
+    Log    Function for suite 2

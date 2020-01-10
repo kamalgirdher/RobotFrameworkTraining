@@ -1,0 +1,4 @@
+*** Keywords ***
+PerformImport
+    Import Variables    ../../Config/${SUITE_NAME}.py
+    Import Variables    ../../CoTestdata/${SUITE_NAME}.py

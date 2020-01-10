@@ -1,0 +1,16 @@
+*** Settings ***
+Suite Setup    
+
+
+*** Test Cases ***
+TC1
+    Log    Start test case 1
+    Log    ${data1}
+
+TC2
+    Log    Start test case 2
+    Log    ${config1}
+    
+TC3
+    Log    Start test case 2
+    

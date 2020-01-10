@@ -1,0 +1,11 @@
+*** Settings ***
+Library    String
+
+*** Keywords ***
+PerformImport
+    ${test_suite_name}=    Split String From Right    ${SUITE_NAME}    .    1
+    
+    Import Variables    ../Config/${SUITE_NAME}.py
+    Import Variables    ../Testdata/${SUITE_NAME}.py
+    Import Variables    ../Locale/${SUITE_NAME}_${Locale}.py
+    

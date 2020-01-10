@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;Master/FunctionLibrary/Specific/TestSuite1.robot&apos;" deleteContents="false" description="Delete resource &apos;Master/FunctionLibrary/Specific/TestSuite1.robot&apos;" element1="/Master/FunctionLibrary/Specific/TestSuite1.robot" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1578596641055"/>
+</session>
