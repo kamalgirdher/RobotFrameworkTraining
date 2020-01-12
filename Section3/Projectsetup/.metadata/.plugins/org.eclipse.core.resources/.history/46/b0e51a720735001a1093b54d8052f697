@@ -1,0 +1,13 @@
+** Settings ** 	  	  	  	 
+Library    RequestsLibrary
+Library    OperatingSystem
+
+** Test Cases ** 	  	  	  	 
+	
+TC4 - Post request
+    Create Session  createcar  http://localhost:3000
+    ${file_data}=  Get Binary File  ${CURDIR}${/}car.json
+    &{files}=  Create Dictionary  file=${file_data}
+    ${resp}=  Post Request  createcar  /dolphins  files=${files}
+    ${file}=  To Json  ${resp.body()}
+    Should Be Equal As Strings  ${resp.status_code}  200

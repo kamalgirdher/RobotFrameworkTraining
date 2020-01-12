@@ -8,9 +8,8 @@ TC1- This should pass
 
 TC2- This should pass
     Log    ${config1}
-    
+
 TC3- This should fail at step3
     Log    ${welcomeMsg}
     SpecificFunction1
     SpecificFunction2
-    

@@ -1,0 +1,7 @@
+** Settings ** 	  	  	  	 
+Library 	RequestsLibrary 	  	  	 
+** Test Cases ** 	  	  	  	 
+Get Requests 	  	  	  	 
+  	Create Session 	google 	http://www.google.com 	 
+  	${response}= 	Get Request 	google 	/
+  	Should Be Equal As Strings 	${response.status_code} 	200 	 

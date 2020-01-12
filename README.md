@@ -66,11 +66,17 @@
 
 4.2 - Various HTTP request methods
 
-4.3 - Headers and params
+4.3 - Get request
 
-4.4 - Assertions
+4.4 - Post request
 
-4.5 - Project setup
+4.5 - Put request
+
+4.6 - Delete request
+
+4.7 - Headers and params
+
+4.8 - Assertions
 
 
 

@@ -13,11 +13,11 @@
 <stringAttribute key="Interpreter arguments" value=""/>
 <stringAttribute key="Interpreter name" value="Python"/>
 <booleanAttribute key="Project interpreter" value="true"/>
-<stringAttribute key="Project name" value="Master"/>
+<stringAttribute key="Project name" value="requests"/>
 <stringAttribute key="Remote agent" value="false"/>
 <stringAttribute key="Robot arguments" value=""/>
 <mapAttribute key="Test suites">
-<mapEntry key="Suites/TestSuite1.robot" value=""/>
+<mapEntry key="testSuite1.robot" value=""/>
 </mapAttribute>
 <setAttribute key="Test suites unselected"/>
 <stringAttribute key="Version of configuration" value="1"/>
