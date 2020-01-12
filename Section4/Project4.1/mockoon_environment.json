@@ -1,0 +1,84 @@
+{
+    "id": "mockoon_export",
+    "appVersion": "1.4.0",
+    "checksum": "ba3bef21a38569099f8761d8187523aa",
+    "subject": "environment",
+    "data": {
+        "uuid": "058a4110-cda7-11e9-b8a9-a5bff02ac24a",
+        "name": "Example",
+        "endpointPrefix": "",
+        "latency": 0,
+        "port": 3000,
+        "routes": [
+            {
+                "uuid": "058a4111-cda7-11e9-b8a9-a5bff02ac24a",
+                "documentation": "",
+                "method": "get",
+                "endpoint": "answer",
+                "body": "42",
+                "latency": 0,
+                "statusCode": "200",
+                "headers": [
+                    {
+                        "key": "Content-Type",
+                        "value": "text/plain"
+                    }
+                ],
+                "filePath": "",
+                "sendFileAsBody": false
+            },
+            {
+                "uuid": "058a4112-cda7-11e9-b8a9-a5bff02ac24a",
+                "documentation": "",
+                "method": "post",
+                "endpoint": "dolphins",
+                "body": "{  \r\n    \"employee\": {  \r\n        \"name\":       \"Arjun\",   \r\n        \"salary\":      56000,   \r\n        \"married\":    true  \r\n    }  \r\n}",
+                "latency": 0,
+                "statusCode": "200",
+                "headers": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "firstname",
+                        "value": "Kamal"
+                    },
+                    {
+                        "key": "lastname",
+                        "value": "Girdher"
+                    }
+                ],
+                "filePath": "",
+                "sendFileAsBody": false
+            },
+            {
+                "uuid": "acfcd840-350d-11ea-912a-4504877b5add",
+                "documentation": "",
+                "method": "delete",
+                "endpoint": "deleteRequest",
+                "body": "{\n\"resp\":\"Hello\"\n}",
+                "latency": 0,
+                "statusCode": "200",
+                "headers": [
+                    {
+                        "key": "",
+                        "value": ""
+                    }
+                ],
+                "filePath": "",
+                "sendFileAsBody": false
+            }
+        ],
+        "proxyMode": false,
+        "proxyHost": "",
+        "https": false,
+        "cors": true,
+        "headers": [
+            {
+                "key": "",
+                "value": ""
+            }
+        ]
+    }
+}
