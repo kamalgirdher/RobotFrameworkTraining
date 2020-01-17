@@ -37,10 +37,23 @@ These are the four HTTP methods used in REST based architecture.
 	
     DELETE - Used to remove a resource.
 
+In this tutorial, we would use mocking of services on our local to execute the tests. For this, we are using a tool called **Mockoon**. 
+
+**Installation**
+
+
+    1. Download and install Mockoon(https://mockoon.com) to mock services and practice extensively.
+
+    2. Create New environment in mockoon using mockoon_environment.json in the project. [Refer : https://megettingerror.blogspot.com/2019/06/how-to-import-environment-in-mockoon.html]
+
+
 
 ### Lecture 4.3 - Get request | REST API testing using Robot framework
 
 **GET request**
+
+GET requests are used to retrieve resource representation/information only – and not to modify it in any way. As GET requests do not change the state of the resource, these are said to be safe methods.
+
 ```
 ** Settings ** 	  	  	  	 
 Library 	RequestsLibrary 	  	  	 
@@ -74,6 +87,9 @@ TC3 - Get request using cookies
 
 ### Lecture 4.4 - Post request | REST API testing using Robot framework
 **POST**
+
+POST APIs are used to create new subordinate resources, e.g., a file is subordinate to a directory containing it or a row is subordinate to a database table. Talking strictly in terms of REST, POST methods are used to create a new resource into the collection of resources.
+
 ```
 TC4 - Post request
     Create Session  uri  http://localhost:3000
@@ -127,19 +143,25 @@ You can see that body of request goes in the form of query string parameters(URL
 
 
 ### Lecture 4.5 - Put request | REST API testing using Robot framework
+PUT APIs are used primarily to update existing resource (if the resource does not exist, then API may decide to create a new resource or not). If a new resource has been created by the PUT API, the origin server MUST inform the user agent via the HTTP response code 201 (Created) response and if an existing resource is modified, either the 200 (OK) or 204 (No Content) response codes SHOULD be sent to indicate successful completion of the request.
 
 
 ### Lecture 4.6 - Delete request | REST API testing using Robot framework
+DELETE APIs are used to delete resources (identified by the Request-URI).
+
+A successful response of DELETE requests SHOULD be HTTP response code
+
+ 200 (OK) if the response includes an entity describing the status,
+ 
+ 202 (Accepted) if the action has been queued,
+ 
+ 204 (No Content) if the action has been performed but the response does not include an entity.
+
+### Lecture 4.7 - Headers and params
+
+### Lecture 4.8 - Assertions
 
 
 
 
-
-**PUT**
-
-
-**DELETE**
-
-### Lecture 4.3 - Headers and params
-
-### Lecture 4.4 - Assertions
+Note : Some information has been picked from https://restfulapi.net/http-methods/

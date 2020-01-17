@@ -1,3 +1,4 @@
 *.html
 *.project
 output.xml
+.metadata/*.*

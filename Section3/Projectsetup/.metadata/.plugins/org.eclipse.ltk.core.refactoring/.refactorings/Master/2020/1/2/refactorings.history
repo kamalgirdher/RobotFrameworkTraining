@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;Master/Locale/TestSuite1.py&apos; to &apos;TestSuite1_EN.py&apos;" description="Rename resource &apos;TestSuite1.py&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Locale/TestSuite1.py" name="TestSuite1_EN.py" stamp="1578593246384" updateReferences="true"/>&#x0A;<refactoring comment="Move &apos;TestSuite1_EN.py&apos; to &apos;__pycache__&apos;" description="Move &apos;TestSuite1_EN.py&apos; to &apos;__pycache__&apos;" destination="Locale/__pycache__" element1="Locale/TestSuite1_EN.py" flags="7" id="org.eclipse.ltk.core.refactoring.move.resources" resources="1" stamp="1578597215177" updateReferences="true"/>
-</session>

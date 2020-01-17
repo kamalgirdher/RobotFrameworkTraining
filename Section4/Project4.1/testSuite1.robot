@@ -2,7 +2,24 @@
 Library    RequestsLibrary
 Library    OperatingSystem
 
-** Test Cases ** 	  	  	  	   	
+** Test Cases ** 
+TC1 - Get request	  	  	 
+  	Create Session 	google 	http://www.google.com 	 
+  	${response}= 	Get Request 	google 	/
+  	Should Be Equal As Strings 	${response.status_code} 	200 	 
+
+TC2 - Get request using outbound proxies	  	  	 
+  	${proxies}= 	Create Dictionary 	http=http://acme.com:912 	https=http://acme.com:913
+  	Create Session 	google 	http://www.google.com    proxies=${proxies}
+  	${response}= 	Get Request 	google 	/
+  	Should Be Equal As Strings 	${response.status_code} 	200
+  	
+TC3 - Get request using cookies	  	  	 
+  	${cookies}= 	Create Dictionary 	cookie1=111 	cookie2=222
+  	Create Session 	google 	http://www.google.com    cookies=${cookies}
+  	${response}= 	Get Request 	google 	/
+  	Should Be Equal As Strings 	${response.status_code} 	200
+  	  	  	  	   	
 TC4 - Post request
     Create Session  uri  http://localhost:3000
   	${data}= 	Create Dictionary 	a=1    b=2
