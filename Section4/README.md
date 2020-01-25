@@ -183,13 +183,21 @@ application/json.
 application/xml.
 ```
 
+
 **Cookie**
 The Cookie header contains the authenticated session ID that you obtained after creating a REST API session. Having this header with the session ID allows your subsequent requests to be authenticated. Without it, you will receive a 401 Unauthorized on any request attempt made.
 
 
+
 ### Lecture 4.8 - Assertions
+Assrtions are checks that we add in our test case to check whether the test is failing or passing.
+
+```
+Should Be Equal As Strings 	${response.status_code} 	200
+
+Should be Equal As Strings    ${resp.text}    Login Successful!
+```
 
 
 
-
-Note : Some information has been picked from https://restfulapi.net/http-methods/
+Note : Some information has been picked from https://restfulapi.net and https://observersupport.viavisolutions.com
