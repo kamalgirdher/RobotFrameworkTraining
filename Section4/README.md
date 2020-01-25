@@ -159,6 +159,34 @@ A successful response of DELETE requests SHOULD be HTTP response code
 
 ### Lecture 4.7 - Headers and params
 
+All REST requests must contain 3 HTTP header fields i.e. Accept, Content-Type, and Cookie.
+
+**Content-type**
+The Content-Type header describes the format request body. The body of your requests can be sent as JSON or XML, but you need to declare in the Content-Type header which one is being used.
+
+The value of Content-Type header could be one out of these:
+
+```
+application/json.
+
+application/xml.
+```
+
+**Accept**
+The Accept header describes which format you want a response body to arrive as. Responses can be delivered either as XML or JSON by modifying the Accept header. 
+
+The value of Accept header could be one out of these:
+
+```
+application/json.
+
+application/xml.
+```
+
+**Cookie**
+The Cookie header contains the authenticated session ID that you obtained after creating a REST API session. Having this header with the session ID allows your subsequent requests to be authenticated. Without it, you will receive a 401 Unauthorized on any request attempt made.
+
+
 ### Lecture 4.8 - Assertions
 
 

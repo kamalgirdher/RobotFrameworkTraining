@@ -1,0 +1,10 @@
+** Settings ** 	  	  	  	 
+Library    RequestsLibrary
+Library    OperatingSystem
+
+** Test Cases ** 
+TC6 - Post request
+    Create Session  uri  http://127.0.0.1:5000
+  	${data}= 	Create Dictionary 	user=admin    pwd=adkmin
+    ${resp}=  Post Request  uri  /api/login    json=${data}    
+    Log    ${resp.text}
