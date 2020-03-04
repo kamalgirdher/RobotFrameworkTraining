@@ -1,0 +1,22 @@
+*** Keywords ***
+CommonFunction1
+    [Arguments]    ${message}
+    Log    ${message}
+
+
+
+*** Test Cases ***
+TC1
+    CommonFunction1    test message 1  
+    CommonFunction1    test message 2
+    CommonFunction1    test message 3
+    
+TC2
+    Log    test message 1
+    Log    test message 2
+    Log    test message 3
+    
+TC3
+    Log    test message 1
+    Log    test message 2
+    Log    test message 3

@@ -1,0 +1,17 @@
+*** Keywords ***
+CommonFunction1
+    Log    test message 1
+    Log    test message 2
+    Log    test message 3
+
+
+
+*** Test Cases ***
+TC1
+    CommonFunction1
+    
+TC2
+    CommonFunction1
+    
+TC3
+    CommonFunction1

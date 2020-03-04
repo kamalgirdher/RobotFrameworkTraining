@@ -1,0 +1,21 @@
+*** Settings ***
+Documentation    This is a test suite which covers login page features.
+Test Setup    Log    test starts
+Test Teardown    Log    test ends
+
+
+*** Test Cases ***
+TC1
+    Log    test message 1
+    Log    test message 2
+    Log    test message 3
+    
+TC2
+    Log    test message 1
+    Log    test message 2
+    Log    test message 3
+    
+TC3
+    Log    test message 1
+    Log    test message 2
+    Log    test message 3

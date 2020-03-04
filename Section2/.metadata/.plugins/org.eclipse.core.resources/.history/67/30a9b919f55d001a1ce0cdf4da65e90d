@@ -1,0 +1,11 @@
+*** Test Cases ***
+TC1
+    Log    test message 1
+    Log    test message 2
+    Log    test message 3
+    
+TC2
+    Log    test message 1
+    Log    test message 2
+    Log    test message 3
+    

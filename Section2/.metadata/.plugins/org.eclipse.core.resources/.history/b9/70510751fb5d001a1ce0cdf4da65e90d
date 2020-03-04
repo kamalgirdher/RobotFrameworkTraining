@@ -1,0 +1,21 @@
+*** Settings ***
+Test Setup    Log    test setup 1
+Test Teardown    Log    test teardown 1
+
+*** Test Cases ***
+TC1
+    [Setup]    Log    test setup 2
+    [Teardown]    Log    test teardown 2
+    Log    test message 1
+    Log    test message 2
+    Log    test message 3
+
+TC2
+    Log    test message 1
+    Log    test message 2
+    Log    test message 3
+
+TC3
+    Log    test message 1
+    Log    test message 2
+    Log    test message 3

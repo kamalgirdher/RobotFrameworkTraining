@@ -1,0 +1,29 @@
+*** Keywords ***
+CommonFunction1
+    Log    test message 1
+    Log    test message 2
+    Log    test message 3
+
+
+
+*** Test Cases ***
+TC1
+    CommonFunction1
+    
+TC2
+    CommonFunction1
+    
+TC3
+    CommonFunction1
+    
+TC4 - Celcius to Farenheit
+    ${celcius}=    Set Variable    37
+    ${Farehneit}=    Evaluate    (${celcius}*9/5)+32
+    Log    ${Farehneit}
+    
+TC5 - Celcius to Farenheit in Bulk
+    @{celcius}=    Create List    10    12    37    22
+    FOR    ${temp}    IN    @{celcius}
+        ${Farehneit}=    Evaluate    (${temp}*9/5)+32
+        Log    ${Farehneit}
+    END

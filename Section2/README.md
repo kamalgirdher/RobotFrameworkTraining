@@ -1,7 +1,7 @@
 ## Section 2
 
 
-### Lecture 2.1 - Test Suite, Test Cases, User Keywords and Reports
+### Lecture 2.1 - Test Suite, Test Cases and User Keywords
 
 **Test Suite** - As explained in L-1.5, we can create a **Test Suite** under a project. A *test suite*, in general, is a collection of test cases.
 
@@ -53,33 +53,44 @@ We will see more details about these later.
 
 **Test Cases** - 
 
+A simple test case in robot framework looks like this. It has one or more steps one after other. For sake of simplicity, we are just logging message on console.
+
+```
+TC2
+    Log    test message 1
+    Log    test message 2
+    Log    test message 3
+```
+
+Moving on to next test where we are converting celcius temprature to fahrenheit.
 It is absolutely okay, if you do not understand the below code and it's output. Just have a glimpse of how we write test cases in robot framework.
 
 ```
 *** Test Cases ***
-
-TestCase1 - Celcius to Farenheit
+TC5
+    [Documentation]    Test to convert celcius to fahrenheit
     ${celcius}=    Set Variable    37
-    ${Farehneit}=    Evaluate    (${celcius}*9/5)+32
-    Log    ${Farehneit}
+    ${fahrenheit}=    Evaluate    (${celcius}*9/5)+32
+    Log    ${fahrenheit}
     
-TestCase2 - Celcius to Farenheit in Bulk
+TC6
+    [Documentation]    Test to convert List of celcius values to fahrenheit
     @{celcius}=    Create List    10    12    37    22
     FOR    ${temp}    IN    @{celcius}
-        ${Farehneit}=    Evaluate    (${temp}*9/5)+32
-        Log    ${Farehneit}
+        ${fahrenheit}=    Evaluate    (${temp}*9/5)+32
+        Log    ${fahrenheit}
     END
 ```
 
 ### Output logs
 ```
-Starting test: Project1.TS1.TestCase1 - Celcius to Farenheit
+Starting test: Project1.TS1.TC5
 20191207 22:41:50.743 : INFO : ${celcius} = 37
 20191207 22:41:50.743 : INFO : ${Farehneit} = 98.6
 20191207 22:41:50.743 : INFO : 98.6
-Ending test: Project1.TS1.TestCase1 - Celcius to Farenheit
+Ending test: Project1.TS1.TC5
 
-Starting test: Project1.TS1.TestCase2 - Celcius to Farenheit in Bulk
+Starting test: Project1.TS1.TC6
 20191207 22:41:50.743 : INFO : @{celcius} = [ 10 | 12 | 37 | 22 ]
 20191207 22:41:50.743 : INFO : ${Farehneit} = 50.0
 20191207 22:41:50.743 : INFO : 50.0
@@ -89,7 +100,7 @@ Starting test: Project1.TS1.TestCase2 - Celcius to Farenheit in Bulk
 20191207 22:41:50.743 : INFO : 98.6
 20191207 22:41:50.743 : INFO : ${Farehneit} = 71.6
 20191207 22:41:50.743 : INFO : 71.6
-Ending test: Project1.TS1.TestCase2 - Celcius to Farenheit in Bulk
+Ending test: Project1.TS1.TC6
 ```
 
 
@@ -112,6 +123,65 @@ Function1
 Function2
     Log    This is a inner function2
 ```
+
+Another example is shown below. Here we have 4 test cases(TC1, TC2, TC3, TC4) and 2 user keywords(CommonFunction1, CommonFunction2). We can call user keywords from test cases as shown in TC3 and TC4. 
+
+```
+*** Keywords ***
+CommonFunction1
+    Log    test message 1
+    Log    test message 2
+    Log    test message 3
+
+CommonFunction2
+    [Arguments]    ${msg1}    ${msg2}    ${msg3}
+    Log    ${msg1}
+    Log    ${msg2}
+    Log    ${msg3}
+
+
+*** Test Cases ***
+TC1
+    Log    test message 1
+    Log    test message 2
+    Log    test message 3
+
+TC2
+    Log    test message 1
+    Log    test message 2
+    Log    test message 3
+
+TC3
+    [Documentation]    Test having User keyword without arguments
+    CommonFunction1
+    
+TC4
+    [Documentation]    Test having User keyword with arguments
+    CommonFunction2    test message 1    test message 2    test message 3
+```      
+
+
+
+**SUITE LEVEL SETTINGS**
+
+```
+*** Settings ***
+Documentation    this is suite level documentation
+Suite Setup    Log    Suite begins
+Suite Teardown    Log    Suite Ends
+Test Setup    Log    test setup 1
+Test Teardown    Log    test teardown 1
+```
+
+**TEST LEVEL SETTINGS**
+```
+[Documentation]    this is test level documentation
+[Setup]    Log    test setup 2
+[Teardown]    Log    test teardown 2
+```
+
+**NOTE:** If we have **Test Setup/Teardown** at suite level and **SETUP/TEARDOWN** at test level, **SETUP/TEARDOWN** methods override **Test Setup/Teardown** methods.
+
 ---------------------------------------------------------------
 
 
